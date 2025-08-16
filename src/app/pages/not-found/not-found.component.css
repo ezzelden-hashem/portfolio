@@ -1,0 +1,39 @@
+:host
+{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.not-found
+{
+    background-color: #ededed54;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    border: 1px solid #8080802e;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.message
+{
+    color: #525252;
+    max-width: 500px;
+    font-size: 30px;
+    font-family: bahnschrift;
+}
+.emoji
+{
+    width: 150px;
+    height: 150px;
+}
+.emoji img
+{
+    width: 100%;
+    height: 100%;
+}

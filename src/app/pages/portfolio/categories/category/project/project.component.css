@@ -1,0 +1,57 @@
+:host
+{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project
+{
+    width: 95%;
+    background-color: #ba8be454;
+    backdrop-filter: blur(20px);
+    border: 1px solid #8080802e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+    /* transition: 150ms; */
+    transition: border 0s, background-color 150ms;
+}
+.project:hover
+{
+    background-color: #906bb054;
+}
+.project-title
+{
+    width: calc(100% - 30px);
+    font-size: 16px;
+    font-family: bahnschrift;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.project-icon
+{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selected-project
+{
+    background-color: #9970bc54;
+    border: 2px solid #6f409654;
+}
+.selected-project:hover
+{
+    background-color: #7b5b9654;
+}

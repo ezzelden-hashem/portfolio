@@ -1,0 +1,85 @@
+:host
+{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*
+{
+    /* border: 1px solid red; */
+}
+.folder-card
+{
+    width: auto;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    transition: 150ms;
+}
+.folder-card:hover
+{
+    filter: saturate(0.3);
+}
+.folder-svg
+{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 150ms;
+}
+.folder-svg svg
+{
+    /* width: 200px; */
+    transform: scale(1.2);
+}
+#svg-folder-icon-path-01
+{
+    fill: #0d305e;
+}
+#svg-folder-icon-path-02
+{
+    fill: #1c4a87;
+}
+.title
+{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: -0px;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    font-size: 25px;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    z-index: 5;
+}
+@media (max-width: 700px) {
+    
+    .folder-card
+    {
+        /* width: 100%; */
+        height: 150px;
+    }
+    .folder-svg svg
+    {
+        transform: scale(1);
+    }
+    .title
+    {
+        /* padding: 10px; */
+        padding: 20px;
+        font-size: 20px;
+        /* width: 130px; */
+        /* bottom: 20px;
+        right: 35px; */
+    }
+}

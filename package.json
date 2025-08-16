@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "ngtunnel": "ng serve --host 0.0.0.0 --disable-host-check",
+    "cloudflaretunnel": "cloudflared tunnel --url http://localhost:4200/",
+    "tunnel": "concurrently -k -n ANGULAR,CLOUDFLARE -c yellow,cyan \"npm run ngtunnel\" \"npm run cloudflaretunnel\""
   },
   "private": true,
   "dependencies": {

@@ -1,0 +1,7 @@
+<div class="categories">
+    <div class="title">Categories</div>
+    
+    @for (category of categories; track $index) {
+        <app-category (selection)="emitSelection()" [categoryInfo]="category"/>
+    }
+</div>

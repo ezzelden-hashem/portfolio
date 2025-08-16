@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="category" [class.activateSelection]="selected()">
+    <div class="title">{{ categoryInfo().title }}</div>
+    <div class="category-icon" id="category-icon-id" #category_icon></div>
+  </div>
+  <div class="category-content-tree" [style.height]="selected() ? categoryTreeHeight() : '0'">
+
+    @for (folder of portfolioService.getCategoryFolders(categoryInfo().name); track $index) {
+      <app-folder (selection)="emitSelection()" [folderInfo]="folder" [parentObjectInfo]="categoryInfo()"/>    
+    }
+    @for (project of portfolioService.getCategoryProjects(categoryInfo().name); track $index) {
+      <app-project (selection)="emitSelection()" [projectInfo]="project" [parentObjectInfo]="categoryInfo()"/>
+    }
+
+  </div>
+  
+</div>

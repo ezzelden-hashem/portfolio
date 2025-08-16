@@ -1,0 +1,50 @@
+*
+{
+    /* border: 1px solid red; */
+    /* transition: 300ms; */
+}
+.img-grid
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.title
+{
+    width: 100%;
+    font-size: 30px;
+    font-family: bahnschrift;
+    margin-bottom: 20px;
+}
+.img-cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;;
+    /* padding: 16px; */
+}
+.img-card
+{
+    overflow: hidden;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    filter: brightness(0.75) saturate(0.5);
+    transition: 250ms;
+}
+.img-card:hover
+{
+    filter: brightness(1) saturate(1);
+}
+.img-card img
+{
+    background-size: cover;
+    image-rendering: optimizeSpeed;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

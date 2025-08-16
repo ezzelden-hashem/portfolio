@@ -1,0 +1,88 @@
+:root
+{
+    --ttr: 0px;
+}
+.category
+{
+    background-color: #ededed54;
+    background-color: #d6ddea54;
+    backdrop-filter: blur(20px);
+    border: 1px solid #8080802e;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    user-select: none;
+    cursor: pointer;
+    transition: 150ms;
+}
+.category:hover
+{
+    background-color: #0076fc2e;
+}
+.category:active
+{
+    color: white;
+    background-color: #0050abfb;
+}
+.category:active .category-icon svg
+{
+    fill: white;
+}
+.category:active .category-icon svg *
+{
+    fill: white;
+}
+.activateSelection
+{
+    color: white;
+    background-color: #0050abfb;
+}
+.activateSelection:hover
+{
+    color: white;
+    background-color: #0050abfb;
+}
+.activateSelection svg, .activateSelection svg *
+{
+    fill: white !important;
+}
+.title
+{
+    font-size: 16px;
+    font-family: bahnschrift;
+}
+.category-icon
+{
+    width: 30px;
+    height: 30px;
+}
+.category-icon svg, .category-icon svg *
+{
+    fill: #525252;
+}
+@property --tree-height {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+.category-content-tree
+{
+    /* background-color: #bdbdbd; */
+    width: 100%;
+    display: flex;
+    height: var(--ttr);
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: height 250ms, opacity 300ms;
+    /* opacity: 0%; */
+}
+.container .category.activateSelection + .category-content-tree
+{
+    overflow: visible;
+}

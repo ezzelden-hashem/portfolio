@@ -1,0 +1,14 @@
+<div class="nav-bar">
+    <div class="separator segment" (click)="gotoRootPath()"> > </div>
+    @if (selectionStateService.getSelectedCategory()) {
+        <app-path-segment (selection)="emitSelection()" class="segment" [segmentInfo]="selectionStateService.getSelectedCategory()"/>
+    }
+    @if (selectionStateService.getSelectedFolder()) {
+        <span class="separator"> - </span>
+        <app-path-segment (selection)="emitSelection()" class="segment" [segmentInfo]="selectionStateService.getSelectedFolder()"/>
+    }
+    @if (selectionStateService.getSelectedProject()) {
+        <span class="separator"> - </span>
+        <app-path-segment (selection)="emitSelection()" class="segment" [segmentInfo]="selectionStateService.getSelectedProject()"/>
+    }
+</div>

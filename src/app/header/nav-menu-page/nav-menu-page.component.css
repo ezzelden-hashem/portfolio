@@ -1,0 +1,32 @@
+.nav-page
+{
+    background-color: #525252d9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    opacity: 0%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: opacity 250ms;
+}
+.nav-page nav ul
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-family: bahnschrift;
+    gap: 30px;
+    list-style: none;
+}
+.nav-page nav ul a
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
