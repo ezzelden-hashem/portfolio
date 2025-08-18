@@ -7,20 +7,24 @@ export const project_flyers: Project = {
     name: 'flyer',
     title: 'Flyers',
     icon: 'project-i01',
-    thumbnail: 'assets/portfolio/graphic-design/flyer/flyer-thumbnail.jpg',
+    thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/flyer/flyer-thumbnail.jpg",
     templates: [
         {
             templateName: 'app-img-full',
             templateData: {
                 title: 'Flyer 1',
-                imgUrl: 'assets/portfolio/graphic-design/flyer/eklear-01.jpg'
+                thumbnailUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/flyer/blur/eklear-01-mid-blur.avif",
+                imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/flyer/mid/eklear-01-mid.jpg",
+                fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/flyer/full/eklear-01-full.jpg"
             } as ImgFullTemplateData
         },
         {
             templateName: 'app-img-full',
             templateData: {
                 title: 'Flyer 2',
-                imgUrl: 'assets/portfolio/graphic-design/flyer/eklear-02.jpg'
+                thumbnailUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/flyer/blur/eklear-02-mid-blur.avif",
+                imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/flyer/mid/eklear-02-mid.jpg",
+                fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/flyer/full/eklear-02-full.jpg"
             } as ImgFullTemplateData
         },
     ]

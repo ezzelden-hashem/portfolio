@@ -8,22 +8,33 @@ export const project_another_3d: Project = {
     name: 'another-3d',
     title: 'Another 3D',
     icon: 'project-i01',
-    thumbnail: 'assets/portfolio/3d/another-3d/fruits-and-drinks-thumbnail.jpg',
+    thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/another-3d/fruits-and-drinks-thumbnail.jpg",
     templates: [
         {
             templateName: 'app-img-full',
             templateData: {
                 title: '3D Collection',
-                imgUrl: 'assets/portfolio/3d/another-3d/fruits-and-drinks-s02.png'
+                imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/another-3d/mid/fruits-and-drinks-s02-mid.jpg",
+                thumbnailUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/another-3d/blur/fruits-and-drinks-s02-mid-blur.avif",
+                fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/another-3d/full/fruits-and-drinks-s02-full.jpg"
             } as ImgFullTemplateData
         },
         {
             templateName: 'app-img-grid',
             templateData: {
                 title: 'See More',
-                imgUrls: [
-                    'assets/portfolio/3d/another-3d/fruits-and-drinks-s01.png',
-                    'assets/portfolio/3d/another-3d/fur-and-soft-body.png',
+                imgs : [
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/another-3d/blur/fruits-and-drinks-s01-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/another-3d/mid/fruits-and-drinks-s01-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/another-3d/full/fruits-and-drinks-s01-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/another-3d/blur/fur-and-soft-body-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/another-3d/mid/fur-and-soft-body-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/another-3d/full/fur-and-soft-body-full.jpg"
+                    },
+                    
                 ]
             } as ImgGridTemplateData
         },

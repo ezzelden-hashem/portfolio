@@ -8,22 +8,32 @@ export const project_eltamayoz: Project = {
     name: 'eltamayoz',
     title: 'Eltamayoz Notebook',
     icon: 'project-i01',
-    thumbnail: 'assets/portfolio/graphic-design/book-cover/eltamayoz/eltamayoz-thumbnail.jpg',
+    thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/eltamayoz/eltamayoz-thumbnail.jpg",
     templates: [
         {
             templateName: 'app-img-full',
             templateData: {
                 title: 'Eltamayoz Notebook Cover Design',
-                imgUrl: 'assets/portfolio/graphic-design/book-cover/eltamayoz/eltamayoz-s04.jpg'
+                thumbnailUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/eltamayoz/blur/eltamayoz-s04-full-mid-blur.avif",
+                imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/eltamayoz/mid/eltamayoz-s04-full-mid.jpg",
+                fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/eltamayoz/full/eltamayoz-s04-full.jpg"
             } as ImgFullTemplateData
         },
         {
             templateName: 'app-img-grid',
             templateData: {
                 title: 'See More',
-                imgUrls: [
-                    'assets/portfolio/graphic-design/book-cover/eltamayoz/eltamayoz-s01.jpg',
-                    'assets/portfolio/graphic-design/book-cover/eltamayoz/eltamayoz-s03.jpg',
+                imgs: [
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/eltamayoz/blur/eltamayoz-s01-full-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/eltamayoz/mid/eltamayoz-s01-full-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/eltamayoz/full/eltamayoz-s01-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/eltamayoz/blur/eltamayoz-s03-full-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/eltamayoz/mid/eltamayoz-s03-full-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/eltamayoz/full/eltamayoz-s03-full.jpg"
+                    },
                 ]
             } as ImgGridTemplateData
         },

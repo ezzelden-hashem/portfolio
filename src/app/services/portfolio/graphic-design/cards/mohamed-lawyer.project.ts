@@ -8,22 +8,32 @@ export const project_mohamed_lawyer: Project = {
     name: 'mohamed-lawyer',
     title: 'Mohamed Lawyer',
     icon: 'project-i01',
-    thumbnail: 'assets/portfolio/graphic-design/card/mohamed-mustafa-lawyer/mohamed-mustafa-lawyer-thumbnail.jpg',
+    thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/card/mohamed-mustafa-lawyer/mohamed-mustafa-lawyer-thumbnail.jpg",
     templates: [
         {
             templateName: 'app-img-full',
             templateData: {
                 title: 'Mohamed Lawyer Business Card',
-                imgUrl: 'assets/portfolio/graphic-design/card/mohamed-mustafa-lawyer/m06.jpg',
+                thumbnailUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/card/mohamed-mustafa-lawyer/blur/m04.1-mid-blur.avif",
+                imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/card/mohamed-mustafa-lawyer/mid/m04.1-mid.jpg",
+                fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/card/mohamed-mustafa-lawyer/full/m04.1-full.jpg"
             } as ImgFullTemplateData
         },
         {
             templateName: 'app-img-grid',
             templateData: {
                 title: 'See More',
-                imgUrls: [
-                    'assets/portfolio/graphic-design/card/mohamed-mustafa-lawyer/m03.1.jpg',
-                    'assets/portfolio/graphic-design/card/mohamed-mustafa-lawyer/m04.1.jpg',
+                imgs: [
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/card/mohamed-mustafa-lawyer/blur/m03.1-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/card/mohamed-mustafa-lawyer/mid/m03.1-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/card/mohamed-mustafa-lawyer/full/m03.1-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/card/mohamed-mustafa-lawyer/blur/m06-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/card/mohamed-mustafa-lawyer/mid/m06-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/card/mohamed-mustafa-lawyer/full/m06-full.jpg"
+                    }
                 ]
             } as ImgGridTemplateData
         },

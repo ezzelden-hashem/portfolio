@@ -8,25 +8,47 @@ export const project_cup_of_tea: Project = {
     name: 'cup-of-tea',
     title: 'Cup of Tea',
     icon: 'project-i01',
-    thumbnail: 'assets/portfolio/3d/cup-of-tea/glass-model-thumbnail.jpg',
+    thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/glass-model-thumbnail.jpg",
     templates: [
         {
             templateName: 'app-img-full',
             templateData: {
                 title: 'Cup of Tea in Blender',
-                imgUrl: 'assets/portfolio/3d/cup-of-tea/glass-model-01-s05.png'
+                imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/mid/glass-model-01-s05-mid.jpg",
+                thumbnailUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/blur/glass-model-01-s05-mid-blur.avif",
+                fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/full/glass-model-01-s05-full.jpg"
             } as ImgFullTemplateData
         },
         {
             templateName: 'app-img-grid',
             templateData: {
                 title: 'See More',
-                imgUrls: [
-                    'assets/portfolio/3d/cup-of-tea/glass-model-01-s01.png',
-                    'assets/portfolio/3d/cup-of-tea/glass-model-01-s02.png',
-                    'assets/portfolio/3d/cup-of-tea/glass-model-01-s03.png',
-                    'assets/portfolio/3d/cup-of-tea/glass-model-01-s04.png',
-                    'assets/portfolio/3d/cup-of-tea/glass-model-01-s06.png',
+                imgs: [
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/blur/glass-model-01-s01-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/mid/glass-model-01-s01-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/full/glass-model-01-s01-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/blur/glass-model-01-s02-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/mid/glass-model-01-s02-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/full/glass-model-01-s02-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/blur/glass-model-01-s03-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/mid/glass-model-01-s03-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/full/glass-model-01-s03-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/blur/glass-model-01-s04-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/mid/glass-model-01-s04-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/full/glass-model-01-s04-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/blur/glass-model-01-s06-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/mid/glass-model-01-s06-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/cup-of-tea/full/glass-model-01-s06-full.jpg"
+                    },
                 ]
             } as ImgGridTemplateData
         },

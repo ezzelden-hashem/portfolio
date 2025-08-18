@@ -8,30 +8,72 @@ export const project_labels: Project = {
     name: 'labels',
     title: 'Labels',
     icon: 'project-i01',
-    thumbnail: 'assets/portfolio/graphic-design/labels/labels-thumbnail.jpg',
+    thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/labels-thumbnail.jpg",
     templates: [
         {
             templateName: 'app-img-full',
             templateData: {
                 title: 'Label Design',
-                imgUrl: 'assets/portfolio/graphic-design/labels/01.jpg'
+                thumbnailUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/blur/01-mid-blur.avif",
+                imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/mid/01-mid.jpg",
+                fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/full/01-full.jpg"
             } as ImgFullTemplateData
         },
         {
             templateName: 'app-img-grid',
             templateData: {
                 title: 'See More',
-                imgUrls: [
-                    'assets/portfolio/graphic-design/labels/02.jpg',
-                    'assets/portfolio/graphic-design/labels/03.jpg',
-                    'assets/portfolio/graphic-design/labels/04.jpg',
-                    'assets/portfolio/graphic-design/labels/05.jpg',
-                    'assets/portfolio/graphic-design/labels/06.jpg',
-                    'assets/portfolio/graphic-design/labels/07.jpg',
-                    'assets/portfolio/graphic-design/labels/08.jpg',
-                    'assets/portfolio/graphic-design/labels/09.jpg',
-                    'assets/portfolio/graphic-design/labels/10.jpg',
-                    'assets/portfolio/graphic-design/labels/11.jpg',
+                imgs: [
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/blur/02-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/mid/02-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/full/02-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/blur/03-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/mid/03-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/full/03-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/blur/04-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/mid/04-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/full/04-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/blur/05-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/mid/05-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/full/05-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/blur/06-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/mid/06-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/full/06-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/blur/07-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/mid/07-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/full/07-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/blur/08-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/mid/08-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/full/08-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/blur/09-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/mid/09-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/full/09-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/blur/10-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/mid/10-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/full/10-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/blur/11-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/mid/11-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/labels/full/11-full.jpg"
+                    },
                 ]
             } as ImgGridTemplateData
         },

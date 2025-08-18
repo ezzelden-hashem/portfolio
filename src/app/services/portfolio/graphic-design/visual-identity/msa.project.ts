@@ -8,27 +8,57 @@ export const project_msa: Project = {
     name: 'msa',
     title: 'MSA',
     icon: 'project-i01',
-    thumbnail: 'assets/portfolio/graphic-design/visual-identity/msa/msa-thumbnail.jpg',
+    thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/msa-thumbnail.jpg",
     templates: [
         {
             templateName: 'app-img-full',
             templateData: {
                 title: 'MSA Visual Identity',
-                imgUrl: 'assets/portfolio/graphic-design/visual-identity/msa/facebook_banner.jpg'
+                thumbnailUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/blur/msa_folder_01_wmu_01-mid-blur.avif",
+                imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/mid/msa_folder_01_wmu_01-mid.jpg",
+                fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/full/msa_folder_01_wmu_01-full.jpg"
             } as ImgFullTemplateData
         },
         {
             templateName: 'app-img-grid',
             templateData: {
                 title: 'See More',
-                imgUrls: [
-                    'assets/portfolio/graphic-design/visual-identity/msa/card-temp.jpg',
-                    'assets/portfolio/graphic-design/visual-identity/msa/letter_head_2_1_wmu.jpg',
-                    'assets/portfolio/graphic-design/visual-identity/msa/msa_folder_01_wmu_01.jpg',
-                    'assets/portfolio/graphic-design/visual-identity/msa/msa_mug_wmu_01.jpg',
-                    'assets/portfolio/graphic-design/visual-identity/msa/msa_mug_wmu_02.jpg',
-                    'assets/portfolio/graphic-design/visual-identity/msa/msa_pen_wmu-02_01.jpg',
-                    'assets/portfolio/graphic-design/visual-identity/msa/msa_pen_wmu-03_01.jpg',
+                imgs: [
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/blur/card-temp-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/mid/card-temp-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/full/card-temp-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/blur/facebook_banner-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/mid/facebook_banner-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/full/facebook_banner-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/blur/letter_head_2_1_wmu-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/mid/letter_head_2_1_wmu-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/full/letter_head_2_1_wmu-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/blur/msa_mug_wmu_01-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/mid/msa_mug_wmu_01-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/full/msa_mug_wmu_01-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/blur/msa_mug_wmu_02-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/mid/msa_mug_wmu_02-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/full/msa_mug_wmu_02-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/blur/msa_pen_wmu-02_01-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/mid/msa_pen_wmu-02_01-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/full/msa_pen_wmu-02_01-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/blur/msa_pen_wmu-03_01-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/mid/msa_pen_wmu-03_01-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/msa/full/msa_pen_wmu-03_01-full.jpg"
+                    },
                 ]
             } as ImgGridTemplateData
         },

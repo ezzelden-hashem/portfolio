@@ -8,22 +8,32 @@ export const project_elmaarof: Project = {
     name: 'elmaarof',
     title: 'Elmaarof Notebook',
     icon: 'project-i01',
-    thumbnail: 'assets/portfolio/graphic-design/book-cover/elma3rof/elma3rof-note-book-thumbnail.jpg',
+    thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/elma3rof/elma3rof-note-book-thumbnail.jpg",
     templates: [
         {
             templateName: 'app-img-full',
             templateData: {
                 title: 'Elmaarof en Francais',
-                imgUrl: 'assets/portfolio/graphic-design/book-cover/elma3rof/elma3rof-note-book-s03.jpg'
+                thumbnailUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/elma3rof/blur/elma3rof-note-book-s03-mid-blur.avif",
+                imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/elma3rof/mid/elma3rof-note-book-s03-mid.jpg",
+                fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/elma3rof/full/elma3rof-note-book-s03-full.jpg"
             } as ImgFullTemplateData
         },
         {
             templateName: 'app-img-grid',
             templateData: {
                 title: 'See More',
-                imgUrls: [
-                    'assets/portfolio/graphic-design/book-cover/elma3rof/elma3rof-note-book-s01.jpg',
-                    'assets/portfolio/graphic-design/book-cover/elma3rof/elma3rof-note-book-s02.jpg',
+                imgs: [
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/elma3rof/blur/elma3rof-note-book-s01-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/elma3rof/mid/elma3rof-note-book-s01-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/elma3rof/full/elma3rof-note-book-s01-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/elma3rof/blur/elma3rof-note-book-s02-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/elma3rof/mid/elma3rof-note-book-s02-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/book-cover/elma3rof/full/elma3rof-note-book-s02-full.jpg"
+                    },
                 ]
             } as ImgGridTemplateData
         },

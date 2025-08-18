@@ -7,13 +7,15 @@ export const project_eklear: Project = {
     name: 'eklear',
     title: 'Eklear Bakery',
     icon: 'project-i01',
-    thumbnail: 'assets/portfolio/graphic-design/card/eklear/eklear-thumbnail.jpg',
+    thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/card/eklear/eklear-thumbnail.jpg",
     templates: [
         {
             templateName: 'app-img-full',
             templateData: {
                 title: 'Eklear Bakery Business Card',
-                imgUrl: 'assets/portfolio/graphic-design/card/eklear/eklear.jpg'
+                thumbnailUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/card/eklear/blur/eklear-mid-blur.avif",
+                imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/card/eklear/mid/eklear-mid.jpg",
+                fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/card/eklear/full/eklear-full.jpg"
             } as ImgFullTemplateData
         }
     ]

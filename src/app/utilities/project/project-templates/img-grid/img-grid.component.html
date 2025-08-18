@@ -1,9 +1,17 @@
 <div class="img-grid">
     <div class="title"> {{templateData().title}} </div>
     <div class="img-cards">
-        @for (imgUrl of templateData().imgUrls; track $index) {
+        @for (img of imagesUrl; track $index) {
             <div class="img-card" [id]="'img-grid-card-id-' + ($index + 1)">
-                <img [src]="imgUrl" [alt]="'img-' + ($index + 1)" loading="lazy">
+                @if (!img.isLoaded) {
+                    <img class="thumbnail" [src]="img.thumbnail" [alt]="'img-' + ($index + 1)" loading="eager">
+                    <div class="loading-progress">
+                        <div class="spinner" [style.background]="getProgressGradient(img.progress)"></div>
+                    </div>
+                }
+                @else {
+                    <img [src]="img.imgUrl" [alt]="'img-' + ($index + 1)" loading="lazy">
+                }
             </div>
         }
     </div>

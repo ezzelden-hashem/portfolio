@@ -42,7 +42,7 @@ export const portfolio: Category[] =
             folder_visual_identity,
         ],
         projects: [
-            project_flyers,
+            // project_flyers,
             project_free_design,
             project_posts,
             project_mo7a,

@@ -7,20 +7,24 @@ export const project_mo7a: Project = {
     name: 'mo7a',
     title: 'Mo7a Restaurant',
     icon: 'project-i01',
-    thumbnail: 'assets/portfolio/graphic-design/restaurants-menu/mo7a/mo7a-thumbnail.jpg',
+    thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/restaurants-menu/mo7a/mo7a-thumbnail.jpg",
     templates: [
         {
             templateName: 'app-img-full',
             templateData: {
                 title: 'Menu Front',
-                imgUrl: 'assets/portfolio/graphic-design/restaurants-menu/mo7a/1.jpg'
+                thumbnailUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/restaurants-menu/mo7a/blur/1-mid-blur.avif",
+                imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/restaurants-menu/mo7a/mid/1-mid.jpg",
+                fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/restaurants-menu/mo7a/full/1-full.jpg"
             } as ImgFullTemplateData
         },
         {
             templateName: 'app-img-full',
             templateData: {
                 title: 'Menu Back',
-                imgUrl: 'assets/portfolio/graphic-design/restaurants-menu/mo7a/2.jpg'
+                thumbnailUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/restaurants-menu/mo7a/blur/2-mid-blur.avif",
+                imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/restaurants-menu/mo7a/mid/2-mid.jpg",
+                fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/restaurants-menu/mo7a/full/2-full.jpg"
             } as ImgFullTemplateData
         },
     ]

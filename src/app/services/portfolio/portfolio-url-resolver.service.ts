@@ -15,7 +15,7 @@ export class PortfolioUrlResolverService {
   private selectionStateService = inject(PortfolioSelectionStateService);
   private portfolioService = inject(PortfolioService);
   resolveUrl(url: string): Type<any> {
-    // this.printState('state before');
+    // // this.printState('state before');
     const urlSegments = url.split('/').filter(s => !!s);
     if (urlSegments[0] === 'portfolio' && (urlSegments.length <= 4) && (urlSegments.length >= 2))
     {
@@ -32,7 +32,7 @@ export class PortfolioUrlResolverService {
               {
                 this.selectProjectPath(categorySegment, urlSegments[3], urlSegments[2])
                 this.router.navigate(urlSegments);
-                // this.printState('full project path selected');
+                // // this.printState('full project path selected');
                 return PortfolioComponent;
               }
               else
@@ -40,7 +40,7 @@ export class PortfolioUrlResolverService {
                 this.selectFolderPath(categorySegment, urlSegments[2]);
                 // Show No Project Found Page FallBack  #PortfolioItemNotFoundComponent
                 this.router.navigate(urlSegments);
-                // this.printState('no project found');
+                // // this.printState('no project found');
                 return PortfolioItemNotFoundComponent;
               }
             }
@@ -48,7 +48,7 @@ export class PortfolioUrlResolverService {
             {
               this.selectFolderPath(categorySegment, urlSegments[2]);
               this.router.navigate(urlSegments);
-              this.printState('folder path selected');
+              // this.printState('folder path selected');
               return PortfolioComponent;
             }
           }
@@ -58,14 +58,14 @@ export class PortfolioUrlResolverService {
             {
               this.selectProjectPath(categorySegment, urlSegments[2]);
               this.router.navigate(urlSegments);
-              this.printState('short project path selected');
+              // this.printState('short project path selected');
               return PortfolioComponent;
             }
             else
             {
               this.selectCategory(categorySegment);
               // Show No Folder or Project Found Page FallBack  #PortfolioItemNotFoundComponent
-              this.printState('no project found for short path');
+              // this.printState('no project found for short path');
               return PortfolioItemNotFoundComponent;
               // this.router.navigate(urlSegments);
             }
@@ -75,7 +75,7 @@ export class PortfolioUrlResolverService {
         {
           this.selectCategory(categorySegment);
           this.router.navigate(urlSegments);
-          this.printState('category path selected');
+          // this.printState('category path selected');
           return PortfolioComponent;
         }
       }
@@ -84,7 +84,7 @@ export class PortfolioUrlResolverService {
         this.deSelectAll();
         // Show No Category Found Page FallBack  #CategoryNotFoundComponent
         this.router.navigate(urlSegments);
-        this.printState('no category found');
+        // this.printState('no category found');
         return CategoryNotFoundComponent;
         
       }
@@ -92,8 +92,8 @@ export class PortfolioUrlResolverService {
     else
     {
       this.deSelectAll();
-      this.printState('the portfolio url is wrong');
-      console.log(url)
+      // this.printState('the portfolio url is wrong');
+      // console.log(url)
       return NotFoundComponent;
     }
   }

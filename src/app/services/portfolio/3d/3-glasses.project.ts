@@ -8,23 +8,37 @@ export const project_3_glasses: Project = {
     name: '3-glasses',
     title: '3 Glasses',
     icon: 'project-i01',
-    thumbnail: 'assets/portfolio/3d/3-glasses/3-glasses-thumbnail.jpg',
+    thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/3-glasses/3-glasses-thumbnail.jpg",
     templates: [
         {
             templateName: 'app-img-full',
             templateData: {
                 title: '3 Glasses in Blender',
-                imgUrl: 'assets/portfolio/3d/3-glasses/3-glasses-s03.png'
+                imgUrl: 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/3-glasses/mid/3-glasses-s03-mid.jpg',
+                thumbnailUrl: 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/3-glasses/blur/3-glasses-s03-mid-blur.avif',
+                fullResolution: 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/3-glasses/full/3-glasses-s03-full.jpg'
             } as ImgFullTemplateData
         },
         {
             templateName: 'app-img-grid',
             templateData: {
                 title: 'See More',
-                imgUrls: [
-                    'assets/portfolio/3d/3-glasses/3-glasses-s01.png',
-                    'assets/portfolio/3d/3-glasses/3-glasses-s02.png',
-                    'assets/portfolio/3d/3-glasses/3-glasses-s04.png',
+                imgs: [
+                    {
+                        imgUrl   : 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/3-glasses/mid/3-glasses-s01-mid.jpg',
+                        thumbnail: 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/3-glasses/blur/3-glasses-s01-mid-blur.avif',
+                        fullResolution: 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/3-glasses/full/3-glasses-s01-full.jpg'
+                    },
+                    {
+                        imgUrl   : 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/3-glasses/mid/3-glasses-s02-mid.jpg',
+                        thumbnail: 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/3-glasses/blur/3-glasses-s02-mid-blur.avif',
+                        fullResolution: 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/3-glasses/full/3-glasses-s02-full.jpg'
+                    },
+                    {
+                        imgUrl   : 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/3-glasses/mid/3-glasses-s04-mid.jpg',
+                        thumbnail: 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/3-glasses/blur/3-glasses-s04-mid-blur.avif',
+                        fullResolution: 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/3d/3-glasses/full/3-glasses-s04-full.jpg'
+                    },
                 ]
             } as ImgGridTemplateData
         },

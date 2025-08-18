@@ -8,24 +8,42 @@ export const project_zad_elkhair: Project = {
     name: 'zad-elkhair',
     title: 'Zad Elkhair',
     icon: 'project-i01',
-    thumbnail: 'assets/portfolio/graphic-design/visual-identity/zad-elkhair/zad-elkhair-thumbnail.jpg',
+    thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/zad-elkhair-thumbnail.jpg",
     templates: [
         {
             templateName: 'app-img-full',
             templateData: {
                 title: 'Zad Elkhair Visual Identity',
-                imgUrl: 'assets/portfolio/graphic-design/visual-identity/zad-elkhair/banner_2.jpg'
+                thumbnailUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/blur/banner_2-mid-blur.avif",
+                imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/mid/banner_2-mid.jpg",
+                fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/full/banner_2-full.jpg"
             } as ImgFullTemplateData
         },
         {
             templateName: 'app-img-grid',
             templateData: {
                 title: 'See More',
-                imgUrls: [
-                    'assets/portfolio/graphic-design/visual-identity/zad-elkhair/logo_2_m1.jpg',
-                    'assets/portfolio/graphic-design/visual-identity/zad-elkhair/logo_2_m2.jpg',
-                    'assets/portfolio/graphic-design/visual-identity/zad-elkhair/logo_3_m1.jpg',
-                    'assets/portfolio/graphic-design/visual-identity/zad-elkhair/logo_3_m2.jpg',
+                imgs: [
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/blur/logo_2_m1-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/mid/logo_2_m1-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/full/logo_2_m1-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/blur/logo_2_m2-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/mid/logo_2_m2-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/full/logo_2_m2-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/blur/logo_3_m1-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/mid/logo_3_m1-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/full/logo_3_m1-full.jpg"
+                    },
+                    {
+                        thumbnail: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/blur/logo_3_m2-mid-blur.avif",
+                        imgUrl: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/mid/logo_3_m2-mid.jpg",
+                        fullResolution: "https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/graphic-design/visual-identity/zad-elkhair/full/logo_3_m2-full.jpg"
+                    },
                 ]
             } as ImgGridTemplateData
         },
