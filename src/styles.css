@@ -1,3 +1,7 @@
+:root
+{
+    --main-header-height: 60px;
+}
 @font-face {
     font-family: bahnschrift;
     src: url(./assets/fonts/BAHNSCHRIFT.TTF);
@@ -6,6 +10,7 @@
     font-family: nasa;
     src: url(./assets/fonts/NASALIZATION.OTF);
 }
+
 /* You can add global styles to this file, and also import other style files */
 *
 {

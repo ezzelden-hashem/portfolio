@@ -10,17 +10,32 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     padding: 30px;
-    /* align-content: start;
-    justify-content: start; */
     place-items: center;
-    /* place-content: center; */
     overflow: auto;
+}
+.item-card-wrapper-title
+{
+    color: #16445c;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: bahnschrift;
+    display: none;
+    padding-left: 30px;
+    margin: 15px 0;
 }
 @media (max-width: 700px) {
     .item-card-wrapper
     {
-        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); */
         padding: 5px;
-        gap: 10px;
+        /* gap: 10px; */
+    }
+    .item-card-wrapper-title
+    {
+        display: block;
     }
 }

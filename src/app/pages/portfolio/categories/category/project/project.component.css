@@ -11,6 +11,7 @@
     width: 95%;
     background-color: #ba8be454;
     backdrop-filter: blur(20px);
+    backdrop-filter: blur(0px);
     border: 1px solid #8080802e;
     display: flex;
     justify-content: space-between;

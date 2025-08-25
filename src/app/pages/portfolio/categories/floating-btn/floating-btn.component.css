@@ -1,0 +1,23 @@
+.floating-btn
+{
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 35px;
+    height: 35px;
+    color: white;
+    background-color: #00558a;
+    font-size: 25px;
+    font-family: bahnschrift;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    z-index: 3;
+}
+@media (max-width: 700px) {
+    .floating-btn
+    {
+        display: flex;
+    }
+}

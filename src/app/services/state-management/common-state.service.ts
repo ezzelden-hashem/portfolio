@@ -6,9 +6,10 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class CommonStateService {
   private headerNavigationBtn = new BehaviorSubject<boolean>(false);
+  private categoriesBtn = new BehaviorSubject<boolean>(false);
+  
   headerNavigationBtn$ = this.headerNavigationBtn.asObservable();
-  triggerNavBtn()
-  {
-    this.headerNavigationBtn.next(!this.headerNavigationBtn.value);
-  }
+  categoriesBtn$ = this.categoriesBtn.asObservable();
+  triggerNavBtn = () => this.headerNavigationBtn.next(!this.headerNavigationBtn.value);
+  triggerCategoriesBtn = () => this.categoriesBtn.next(!this.categoriesBtn.value);
 }

@@ -1,3 +1,4 @@
+
 :root
 {
     --ttr: 0px;
@@ -85,4 +86,10 @@
 .container .category.activateSelection + .category-content-tree
 {
     overflow: visible;
+}
+@media (max-width: 700px) {
+    app-category
+    {
+        height: initial !important;
+    }
 }

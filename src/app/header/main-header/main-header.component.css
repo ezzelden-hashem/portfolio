@@ -1,8 +1,5 @@
 *
 {
-    /* border: 1px solid rgb(154, 13, 0); */
-    font-size: 20px;
-    font-family: bahnschrift;
     user-select: none;
 }
 :host
@@ -53,6 +50,8 @@ a
 .title .text, .navigation nav li
 {
     color: #16445c;
+    font-size: 20px;
+    font-family: bahnschrift;
 }
 .navigation
 {
@@ -168,6 +167,19 @@ a
         display: flex;
     }
 }
-@media (max-width: 700px) {
-    
+@media (max-width: 500px) {
+    :host
+    {
+        height: 60px;
+    }
+    .nav-btn
+    {
+        width: 40px;
+        height: 40px;
+    }
+    .title .icon
+    {
+        width: 30px;
+        height: 30px;
+    }
 }

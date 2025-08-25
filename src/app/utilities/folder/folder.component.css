@@ -10,16 +10,26 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 25px;
     padding: 30px;
-    /* align-content: start;
-    justify-content: start; */
-    /* place-items: center; */
-    /* place-content: center; */
     overflow: auto;
+}
+.projects-wrapper-title
+{
+    color: #16445c;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: bahnschrift;
+    display: none;
+    padding-left: 30px;
+    margin: 15px 0;
 }
 @media (max-width: 700px) {
     .projects-wrapper
     {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         padding: 5px;
+    }
+    .projects-wrapper-title
+    {
+        display: block;
     }
 }

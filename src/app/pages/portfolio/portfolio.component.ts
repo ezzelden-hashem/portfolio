@@ -10,14 +10,17 @@ import { filter } from 'rxjs';
 import { PortfolioService } from '../../services/portfolio/portfolio.service';
 import { PortfolioUrlResolverService } from '../../services/portfolio/portfolio-url-resolver.service';
 import { NotFoundComponent } from '../not-found/not-found.component';
+import { FloatingBtnComponent } from "./categories/floating-btn/floating-btn.component";
+import { CommonStateService } from '../../services/state-management/common-state.service';
 
 @Component({
   selector: 'app-portfolio',
-  imports: [CategoriesComponent, ViewerComponent, NavigationBarComponent],
+  imports: [CategoriesComponent, ViewerComponent, NavigationBarComponent, FloatingBtnComponent],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css',
 })
 export class PortfolioComponent implements AfterViewInit {
+  private commonState = inject(CommonStateService);
   private portfolioUrlResolver = inject(PortfolioUrlResolverService);
   private imgSelectionStateService = inject(ImgSelectionStateService);
   private portfolioService = inject(PortfolioService);
@@ -32,7 +35,8 @@ export class PortfolioComponent implements AfterViewInit {
     this._fallBackPage.set(value);
   }
   getFallBackPage = this._fallBackPage.asReadonly();
-  calculatedHeight = window.innerHeight - this.mainHeaderDom.getBoundingClientRect().height
+  calculatedHeight = window.innerHeight - this.mainHeaderDom.getBoundingClientRect().height;
+  categoriesBtnState = signal<boolean | null>(null);
   ngOnInit()
   {
     const urlObservation = this.router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe({
@@ -56,9 +60,6 @@ export class PortfolioComponent implements AfterViewInit {
     })
     const stateObservation = this.selectionStateService.selectionObservable$.subscribe({
       next: (value) => {
-        // console.log(value.category())
-        // console.log(value.folder())
-        // console.log(value.project())
         let urlSegments = [];
         if (value.category()) urlSegments.push(value.category()?.name);
         if (value.folder()) urlSegments.push(value.folder()?.name);
@@ -66,6 +67,11 @@ export class PortfolioComponent implements AfterViewInit {
         if (!this.getFallBackPage()) this.router.navigate(['portfolio', ...urlSegments]);
       }
     });
+    const commonStateObservation = this.commonState.categoriesBtn$.subscribe({
+      next: (value) => {
+        this.categoriesBtnState.set(value);
+      }
+    })
     this.destroyRef.onDestroy(() => {
       stateObservation.unsubscribe();
       imgSelectionObservation.unsubscribe();

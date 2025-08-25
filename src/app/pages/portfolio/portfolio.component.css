@@ -31,4 +31,12 @@
     {
         padding: 0px;
     }
+    .portfolio
+    {
+        gap: 0px;
+    }
+    .explorer-scetion
+    {
+        height: calc(100vh - var(--main-header-height));
+    }
 }

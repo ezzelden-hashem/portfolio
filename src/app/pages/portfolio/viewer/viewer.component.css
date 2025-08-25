@@ -1,14 +1,8 @@
-*
-{
-    border: 1px solid red;
-}
 :host
 {
-    /* border: 1px solid green; */
     flex: 1;
-    height: 100vh;
+    height: calc(100vh - var(--main-header-height));
     overflow: hidden;
-    /* padding-bottom: 30px; */
 }
 .view-window
 {
@@ -25,13 +19,30 @@
     padding-bottom: 50px;
     overflow: auto;
 }
+.view-window .title
+{
+    color: #16445c;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: bahnschrift;
+    padding-left: 30px;
+    display: none;
+}
 @media (max-width: 700px) {
+    /* :host
+    {
+        overflow: auto;
+    } */
     .view-window
     {
-        /* height: 100vh; */
-        padding: 10px;
+        padding: 0px;
         border-radius: 0px;
         border: none;
-        padding-bottom: 20px;
+        /* height: initial; */
+        /* padding-bottom: 20px; */
+    }
+    .view-window .title
+    {
+        display: block;
     }
 }

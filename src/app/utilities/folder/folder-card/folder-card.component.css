@@ -5,10 +5,6 @@
     justify-content: center;
     align-items: center;
 }
-*
-{
-    /* border: 1px solid red; */
-}
 .folder-card
 {
     width: auto;
@@ -42,9 +38,10 @@
 {
     fill: #1c4a87;
 }
-.title
+.folder-card-title
 {
     color: #fff;
+    font-family: bahnschrift;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -57,31 +54,65 @@
     overflow: hidden;
     user-select: none;
     cursor: pointer;
-    /* border: 1px solid red; */
     text-overflow: ellipsis;
     text-wrap: nowrap;
     z-index: 5;
 }
+.folder-icon
+{
+    display: none;
+}
 @media (max-width: 700px) {
-    
+    :host
+    {
+        width: 100%;
+    }
+    app-folder-card
+    {
+        width: 90%;
+    }
     .folder-card
     {
-        /* width: 100%; */
-        height: 150px;
+        background-color: #ededed3b;
+        backdrop-filter: blur(20px);
+        border: 1px solid #8080802e;
+        border-radius: 10px;
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: 60px;
+        overflow: visible;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+    }
+    .folder-svg
+    {
+        display: none;
     }
     .folder-svg svg
     {
         transform: scale(1);
     }
-    .title
+    .folder-icon
     {
-        /* padding: 10px; */
-        padding: 20px;
+        width: 35px;
+        height: 35px;
+        display: block;
+    }
+    .folder-icon svg, .folder-icon svg *
+    {
+        fill: #16445c;
+    }
+    .folder-card-title
+    {
+        color: #16445c;
+        font-family: bahnschrift;
+        width: 100%;
+        position: initial;
+        padding: 0px;
+        padding-left: 20px;
         font-size: 20px;
-        bottom: 0px;
-        right: 0px;
-        /* width: 130px; */
-        /* bottom: 20px;
-        right: 35px; */
+        display: flex;
+        align-items: center;
     }
 }

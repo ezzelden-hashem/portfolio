@@ -21,6 +21,16 @@
     /* place-content: center; */
     overflow: auto;
 }
+.category-card-wrapper-title
+{
+    color: #16445c;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: bahnschrift;
+    display: none;
+    padding-left: 30px;
+    margin: 15px 0;
+}
 @media (max-width: 700px) {
     .category-card-wrapper
     {
@@ -29,5 +39,9 @@
         place-items: normal;
         justify-content: start;
         /* align-items: center; */
+    }
+    .category-card-wrapper-title
+    {
+        display: block;
     }
 }

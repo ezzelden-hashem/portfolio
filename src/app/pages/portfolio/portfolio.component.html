@@ -1,5 +1,9 @@
 <div class="page-container" #portfolio_page>
     <div class="portfolio" id="portfolio-page-id">
+        @if (categoriesBtnState())
+        {
+            <app-floating-btn/>
+        }
         <app-categories (selection)="resetFallBack()"/>
         <div class="explorer-scetion">
             <app-navigation-bar (selection)="resetFallBack()"/>
