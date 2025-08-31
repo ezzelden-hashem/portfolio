@@ -3,6 +3,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_free_design: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'An archive of older creative designs developed with Affinity Designer. This collection showcases experimentation and stylistic growth.',
     id: 'c-002-f-000-p-002',
     name: 'free-design',
     title: 'Free Design',

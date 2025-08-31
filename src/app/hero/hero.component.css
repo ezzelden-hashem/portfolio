@@ -1,7 +1,3 @@
-*
-{
-    /* border: 1px solid red !important; */
-}
 :host
 {
     display: flex;
@@ -13,16 +9,14 @@
 {
     background-color: #ededed54;
     width: 100%;
-    /* height: 600px; */
-    border-radius: 20px;
+    border-radius: var(--br-radius-md);
     backdrop-filter: blur(20px);
-    border: 1px solid #8080802e;
+    border: var(--br-style-01);
     padding: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    /* align-items: start; */
 }
 .hero .text 
 {
@@ -34,8 +28,6 @@
     font-size: 60px;
     font-family: bahnschrift;
     font-weight: bold;
-    /* text-shadow: 0 0 100px #ffffff; */
-    /* backdrop-filter: blur(10px); */
 }
 .hero .text .details
 {
@@ -49,12 +41,10 @@
     background-position: center;
     background-size: cover;
     width: 250px;
-    /* max-width: 300px; */
     height: 300px;
     border: 1px solid gray;
     border-radius: 20px;
     margin-right: 50px;
-    /* margin: 100px; */
 }
 .hero-btn
 {

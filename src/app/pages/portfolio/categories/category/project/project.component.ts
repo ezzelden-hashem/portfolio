@@ -1,6 +1,6 @@
 import { Component, computed, ElementRef, HostListener, inject, input, output, Type, ViewChild } from '@angular/core';
 import { CategoryInfo, FolderInfo, PortfolioObjectType, ProjectInfo } from '../../../../../services/portfolio/portfolio.model';
-import { SvgIconProviderService } from '../../../../../services/svg-icon-provider.service';
+import { SvgIconProviderService } from '../../../../../services/content-management/svg-provider/svg-icon-provider.service';
 import { PortfolioSelectionStateService } from '../../../../../services/state-management/portfolio-selection-state.service';
 import { CategoryComponent } from '../category.component';
 import { Router } from '@angular/router';

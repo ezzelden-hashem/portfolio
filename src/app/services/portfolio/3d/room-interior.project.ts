@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../portfolio.model";
 
 export const project_room_interior: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A modern interior design concept built in Blender. The project captures a dream-like atmosphere with a stylish and cozy finish.',
     id: 'c-001-f-000-p-002',
     name: 'room-interior',
     title: 'Room Interior',

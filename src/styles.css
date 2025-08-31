@@ -1,6 +1,26 @@
 :root
 {
-    --main-header-height: 60px;
+    --main-header-height   : 60px;
+    --bgc-main             : #ededed54;
+    --bgc-accent-01        : #16445c;
+    --font-size-main-title : 30px;
+    --font-size-p-lg : 24px;
+    --font-size-p-md : 20px;
+    --font-size-p-sm : 16px;
+    --fgc-main             : var(--bgc-accent-01);
+    --pad-lg               : 50px;
+    --pad-lm               : 35px;
+    --pad-md               : 25px;
+    --pad-ms               : 15px;
+    --pad-sm               : 10px;
+    --br-radius-lg         : 50px;
+    --br-radius-lm         : 35px;
+    --br-radius-md         : 25px;
+    --br-radius-ms         : 15px;
+    --br-radius-sm         : 10px;
+    --br-style-01          : 1px solid #8080802e;
+    --fill-01              : var(--bgc-accent-01);
+    --fill-02              : #ff0000;
 }
 @font-face {
     font-family: bahnschrift;
@@ -10,38 +30,45 @@
     font-family: nasa;
     src: url(./assets/fonts/NASALIZATION.OTF);
 }
-
-/* You can add global styles to this file, and also import other style files */
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body
-{
-    /* color: white;
-    background-color: black; */
-}
 a
 {
     text-decoration: none;
 }
-/* .icon svg
-{
-    fill: #525252;
-    transition: 250ms;
+
+.flx-h         { display: flex;                             }
+.flx-v         { display: flex; flex-direction: column;     }
+.flx-jc-ctr    { justify-content: center;                   }
+.flx-jc-sb     { justify-content: space-between;            }
+.flx-jc-sa     { justify-content: space-around;             }
+.flx-jc-se     { justify-content: space-evenly;             }
+.flx-al-ctr    { align-items: center;                       }
+.flx-al-start  { align-items: start;                        }
+.flx-al-end    { align-items: end;                          }
+.flx-wrap      { flex-wrap: wrap;                           }
+.flex-nowrap   { flex-wrap: nowrap;                         }
+.pad-0         { padding: 0;                                }
+.pad-5         { padding: 5px;                              }
+.pad-10        { padding: 10px;                             }
+.pad-15        { padding: 15px;                             }
+.pad-20        { padding: 20px;                             }
+.pad-25        { padding: 25px;                             }
+.pad-30        { padding: 30px;                             }
+.pad-35        { padding: 35px;                             }
+.pad-40        { padding: 40px;                             }
+.pad-45        { padding: 45px;                             }
+.pad-50        { padding: 50px;                             }
+/* .svg-fill-01 * { fill: var(--fill-01);                      }
+.svg-fill-02 * { fill: var(--fill-02);                      } */
+
+.svg-fill-01 *, .svg-fill-01 * * { fill: var(--fill-01);    }
+.svg-fill-02 *, .svg-fill-02 * * { fill: var(--fill-02);    }
+
+@media (max-width: 700px) {
+    
 }
-.icon svg *
-{
-    fill: #525252;
-    transition: 250ms;
-}
-.category:active .icon svg
-{
-    fill: white;
-}
-.category:active .icon svg *
-{
-    fill: white;
-} */

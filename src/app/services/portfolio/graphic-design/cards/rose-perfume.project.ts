@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_rose_perfume: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A refined card design for a perfume shop. The visuals balance luxury with simplicity, giving the brand a polished image.',
     id: 'c-002-f-001-p-004',
     name: 'rose-perfume',
     title: 'Rose Perfume',

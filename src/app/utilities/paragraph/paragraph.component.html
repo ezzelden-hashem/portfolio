@@ -1,0 +1,13 @@
+<!-- [style]="{ 'maxHeight': isExpanded() ? 'auto' : 'auto'}" -->
+<div (click)="toggle()" #paragraph >
+  <div class="text">
+    {{ text() }}
+  </div>
+  @if (!isExpanded())
+  {
+    <div class="dot">...</div>
+  }
+</div>
+<span class="toggler" (click)="toggle()">
+    {{ isExpanded() ? "Read less" : "Read more" }}
+</span>

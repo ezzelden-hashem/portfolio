@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_labels: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A series of bottle label designs tailored for professional branding. Each design emphasizes clarity, brand identity, and visual appeal.',
     id: 'c-002-f-000-p-005',
     name: 'labels',
     title: 'Labels',

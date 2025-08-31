@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_accounting_office: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A minimal, modern logo for an accounting office. The design conveys trust, stability, and a clean professional look.',
     id: 'c-002-f-003-p-001',
     name: 'accounting-office',
     title: 'Accounting Office',

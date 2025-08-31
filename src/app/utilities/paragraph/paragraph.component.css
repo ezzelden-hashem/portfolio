@@ -1,0 +1,26 @@
+div
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: 350ms;
+    position: relative;
+}
+.text
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 20px);
+}
+.dot
+{
+    bottom: 0;
+    left: calc(100% - 20px);
+    position: absolute;
+    font-family: bahnschrift;
+    font-size: var(--font-size-p-lg);
+}
+.toggler
+{
+    cursor: pointer;
+    color: var(--fgc-main);
+}

@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_zad_elkhair: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A brand identity project for Zad Elkhair Company. Built around clarity, strength, and a consistent visual system.',
     id: 'c-002-f-004-p-002',
     name: 'zad-elkhair',
     title: 'Zad Elkhair',

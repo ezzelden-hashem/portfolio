@@ -3,6 +3,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_mo7a: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A restaurant menu design with appetizing visuals and a clean layout. Created to highlight dishes in a stylish and mouthwatering way.',
     id: 'c-002-f-000-p-004',
     name: 'mo7a',
     title: 'Mo7a Restaurant',

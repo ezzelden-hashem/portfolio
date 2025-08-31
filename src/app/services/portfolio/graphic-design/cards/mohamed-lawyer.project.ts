@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_mohamed_lawyer: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'An elegant card design created for a lawyer. Sophisticated typography and a professional layout reflect credibility and authority.',
     id: 'c-002-f-001-p-002',
     name: 'mohamed-lawyer',
     title: 'Mohamed Lawyer',

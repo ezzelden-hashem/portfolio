@@ -1,0 +1,9 @@
+<div class="quick-portfolio-card">
+    <div class="qpc-image">
+        <img [src]="project().thumbnail" [alt]="project().name">
+    </div>
+    <div class="qpc-title"> {{ project().title }} </div>
+    <!-- <div class="qpc-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fuga optio amet dignissimos odit ratione?</div> -->
+    <div class="qpc-details"> {{ project().description }} </div>
+    <button class="qpc-btn" (click)="gotoProject()">Show Project</button>
+</div>

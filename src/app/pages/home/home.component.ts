@@ -1,12 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { HeroComponent } from "../../hero/hero.component";
 import { CommonStateService } from '../../services/state-management/common-state.service';
-import { RouterLink } from '@angular/router';
-import { NavMenuPageComponent } from "../../header/nav-menu-page/nav-menu-page.component";
+import { SummaryComponent } from "./summary/summary.component";
+import { QuickPortfolioComponent } from "./quick-portfolio/quick-portfolio.component";
 
 @Component({
   selector: 'app-home',
-  imports: [HeroComponent, NavMenuPageComponent],
+  imports: [HeroComponent, SummaryComponent, QuickPortfolioComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

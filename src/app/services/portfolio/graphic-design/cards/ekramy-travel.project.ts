@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_ekramy_travel: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A modern business card designed for a taxi and travel service. The design focuses on clarity, professionalism, and trustworthiness.',
     id: 'c-002-f-001-p-001',
     name: 'ekramy-travel',
     title: 'Ekramy Travel',

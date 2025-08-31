@@ -1,6 +1,7 @@
 .nav-page
 {
-    background-color: #525252d9;
+    background-color: #000000ab;
+    backdrop-filter: blur(10px) saturate(0);
     position: fixed;
     top: 0;
     left: 0;

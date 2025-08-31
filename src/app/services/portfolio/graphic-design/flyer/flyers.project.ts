@@ -3,6 +3,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_flyers: Project = {
     objectType: PortfolioObjectType.Project,
+    description: '',
     id: 'c-002-f-000-p-001',
     name: 'flyer',
     title: 'Flyers',

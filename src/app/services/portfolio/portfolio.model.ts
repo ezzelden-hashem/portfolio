@@ -37,6 +37,7 @@ export type Project = {
     icon: string;
     thumbnail: StringURL;
     templates: ProjectTemplate[];
+    description: string;
 };
 export type ProjectInfo = {
     objectType: PortfolioObjectType.ProjectInfo;
@@ -45,6 +46,7 @@ export type ProjectInfo = {
     title: string;
     icon: string;
     thumbnail: StringURL;
+    description: string;
 };
 // export type ObjectInfo = {
 //     objectType: PortfolioObjectType;

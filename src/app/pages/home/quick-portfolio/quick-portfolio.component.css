@@ -1,0 +1,35 @@
+:host
+{
+    width: 100%;
+}
+.quick-portfolio
+{
+    margin: 20px 0;
+    background-color: #ffffff;
+    /* border: 1px solid red; */
+    min-height: 600px;
+    padding: 50px 20px;
+}
+.quick-portfolio .title
+{
+    color: var(--fgc-main);
+    display: flex;
+    justify-content: center;
+    font-family: bahnschrift;
+    font-size: var(--font-size-main-title);
+    margin-bottom: 10px;
+}
+.quick-portfolio .description
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: bahnschrift;
+    font-size: var(--font-size-p-lm);
+    margin-bottom: 40px;
+}
+.quick-portfolio-cards
+{
+    width: 100%;
+    gap: 20px;
+}

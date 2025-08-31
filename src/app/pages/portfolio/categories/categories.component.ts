@@ -1,6 +1,6 @@
 import { Component, ElementRef, inject, output, ViewChild } from '@angular/core';
 import { CategoryComponent } from "./category/category.component";
-import { SvgIconProviderService } from '../../../services/svg-icon-provider.service';
+import { SvgIconProviderService } from '../../../services/content-management/svg-provider/svg-icon-provider.service';
 import { PortfolioService } from '../../../services/portfolio/portfolio.service';
 import { CategoryInfo } from '../../../services/portfolio/portfolio.model';
 

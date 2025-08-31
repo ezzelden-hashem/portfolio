@@ -2,7 +2,7 @@ import { Component, computed, ElementRef, HostListener, inject, input, ViewChild
 import { Folder, PortfolioObjectType } from '../../../services/portfolio/portfolio.model';
 import { PortfolioSelectionStateService } from '../../../services/state-management/portfolio-selection-state.service';
 import { PortfolioService } from '../../../services/portfolio/portfolio.service';
-import { SvgIconProviderService } from '../../../services/svg-icon-provider.service';
+import { SvgIconProviderService } from '../../../services/content-management/svg-provider/svg-icon-provider.service';
 
 @Component({
   selector: 'app-folder-card',

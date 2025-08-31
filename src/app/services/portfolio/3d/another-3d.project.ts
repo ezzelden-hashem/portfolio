@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../portfolio.model";
 
 export const project_another_3d: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A still-life composition featuring a glass of water, a cup of tea, and apples on a plate. Carefully arranged and rendered to highlight realism and balance.',
     id: 'c-001-f-000-p-004',
     name: 'another-3d',
     title: 'Another 3D',

@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../portfolio.model";
 
 export const project_cup_of_tea: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A polished glass teacup designed with Blender and rendered with high-quality lighting. The result delivers a crisp and elegant visual aesthetic.',
     id: 'c-001-f-000-p-003',
     name: 'cup-of-tea',
     title: 'Cup of Tea',

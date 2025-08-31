@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../portfolio.model";
 
 export const project_3_glasses: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A sleek 3D set of drinking glasses modeled entirely in Blender. The design focuses on realistic reflections and clean rendering for a professional finish.',
     id: 'c-001-f-000-p-001',
     name: '3-glasses',
     title: '3 Glasses',

@@ -3,6 +3,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_posts: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'Engaging social media post designs crafted for digital platforms. Focused on visual clarity and impactful communication.',
     id: 'c-002-f-000-p-003',
     name: 'posts',
     title: 'Posts',

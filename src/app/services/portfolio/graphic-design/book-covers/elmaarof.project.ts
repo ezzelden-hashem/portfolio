@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_elmaarof: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A creative notebook cover designed for a French teacher. The layout combines professional typography and a visually engaging theme.',
     id: 'c-002-f-002-p-001',
     name: 'elmaarof',
     title: 'Elmaarof Notebook',

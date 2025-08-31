@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_msa: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A complete visual identity developed for MSA Real Estate Company. The design reflects professionalism, trust, and modern aesthetics.',
     id: 'c-002-f-004-p-001',
     name: 'msa',
     title: 'MSA',

@@ -3,6 +3,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_eklear: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A bakery shop card design blending warm colors with inviting graphics. The style emphasizes freshness and a welcoming brand feel.',
     id: 'c-002-f-001-p-005',
     name: 'eklear',
     title: 'Eklear Bakery',

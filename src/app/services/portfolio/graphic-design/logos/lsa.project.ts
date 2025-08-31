@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_lsa: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A custom logo created for LSA Company. Its design balances uniqueness with a strong corporate identity.',
     id: 'c-002-f-003-p-002',
     name: 'lsa',
     title: 'LSA Logo',

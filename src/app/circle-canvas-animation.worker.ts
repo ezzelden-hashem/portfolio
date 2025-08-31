@@ -11,7 +11,7 @@ addEventListener('message', ({ data }) => {
     offscreen = data.offscreenCanvas as OffscreenCanvas;
     windowWidth = data.windowWidth as number;
     windowHeight = data.windowHeight as number;
-    cca = new CircleCanvasAnimator(offscreen.getContext('2d')!, windowWidth, windowHeight);
-    cca.startAnimation();
+    // cca = new CircleCanvasAnimator(offscreen.getContext('2d')!, windowWidth, windowHeight);
+    // cca.startAnimation();
   }
 });

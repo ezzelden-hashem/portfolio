@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, computed, ElementRef, HostListener, inject, input, output, signal, ViewChild, ViewEncapsulation } from '@angular/core';
 import { FolderComponent } from "./folder/folder.component";
-import { SvgIconProviderService } from '../../../../services/svg-icon-provider.service';
+import { SvgIconProviderService } from '../../../../services/content-management/svg-provider/svg-icon-provider.service';
 import { PortfolioService } from '../../../../services/portfolio/portfolio.service';
 import { CategoryInfo } from '../../../../services/portfolio/portfolio.model';
 import { ProjectComponent } from "./project/project.component";

@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_eltamayoz: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A science-themed notebook cover designed with Photoshop and Affinity Designer. Clean, modern visuals make it appealing and educational.',
     id: 'c-002-f-002-p-002',
     name: 'eltamayoz',
     title: 'Eltamayoz Notebook',

@@ -55,7 +55,8 @@ export class PortfolioService {
           name: project.name,
           title: project.title,
           icon: project.icon,
-          thumbnail: project.thumbnail
+          thumbnail: project.thumbnail,
+          description: project.description
         });
       }
     }
@@ -84,7 +85,8 @@ export class PortfolioService {
           name: project.name,
           title: project.title,
           icon: project.icon,
-          thumbnail: project.thumbnail
+          thumbnail: project.thumbnail,
+          description: project.description
         });
       }
     }
@@ -159,7 +161,8 @@ export class PortfolioService {
         icon: findResult.icon,
         title: findResult.title,
         objectType: PortfolioObjectType.ProjectInfo,
-        thumbnail: findResult.thumbnail
+        thumbnail: findResult.thumbnail,
+        description: findResult.description
       };
     }
     return null;
@@ -178,9 +181,48 @@ export class PortfolioService {
         title: project.title,
         icon: project.icon,
         objectType: PortfolioObjectType.ProjectInfo,
-        thumbnail: project.thumbnail
+        thumbnail: project.thumbnail,
+        description: project.description
       })
     }
     return projects ? projects : null
+  }
+  getRandomProjects(count: number): Project[]
+  {
+    let projects     : Project[] = [];
+    let randProjects : Project[] = [];
+    let randIndices  : number [] = [];
+    this.portfolioObject.flatMap(c => c.folders).map(f => projects.push(...f.projects));
+    this.portfolioObject.flatMap(c => c.projects).map(p => projects.push(p));
+    let pending = (count <= projects.length) ? count : projects.length;
+    while (pending > 0)
+    {
+      const randIdx: number = Math.floor(Math.random() * projects.length);
+      if (!randIndices.includes(randIdx))
+      {
+        randIndices.push(randIdx);
+        --pending;
+      }
+    }
+    randIndices.map(i => randProjects.push(projects[i]));
+    return randProjects;
+  }
+  getProjectPath(projectId: string): string[] | null
+  {
+    for (const category of this.portfolioObject)
+    {
+      for (const project of category.projects)
+      {
+        if (project.id === projectId) return [category.name, project.name];
+      }
+      for (const folder of category.folders)
+      {
+        for (const project of folder.projects)
+        {
+          if (project.id === projectId) return [category.name, folder.name, project.name];
+        }
+      }
+    }
+    return null;
   }
 }

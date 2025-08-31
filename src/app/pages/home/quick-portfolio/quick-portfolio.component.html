@@ -1,0 +1,9 @@
+<div class="quick-portfolio">
+    <div class="title">Portfolio</div>
+    <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, explicabo.</div>
+    <div class="quick-portfolio-cards  flx-h flx-al-ctr flx-jc-se flx-wrap">
+        @for (project of quickProjects; track $index) {
+            <app-quick-portfolio-card [project]="project"/>
+        }
+    </div>
+</div>

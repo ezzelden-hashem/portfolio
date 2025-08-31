@@ -20,7 +20,8 @@ export class ProjectCardComponent {
       title: this.project().title,
       icon: this.project().icon,
       objectType: PortfolioObjectType.ProjectInfo,
-      thumbnail: this.project().thumbnail
+      thumbnail: this.project().thumbnail,
+      description: this.project().description
     })
   }
 }

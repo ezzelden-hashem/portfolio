@@ -4,6 +4,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_card_design: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A curated collection of business card designs. Each piece highlights different styles, from minimal to creative, crafted with Affinity Designer.',
     id: 'c-002-f-001-p-003',
     name: 'card-design',
     title: 'Business Card Design',

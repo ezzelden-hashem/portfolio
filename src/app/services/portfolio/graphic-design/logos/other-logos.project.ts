@@ -3,6 +3,7 @@ import { PortfolioObjectType, Project } from "../../portfolio.model";
 
 export const project_other_logos: Project = {
     objectType: PortfolioObjectType.Project,
+    description: 'A set of diverse logo designs from previous projects. Each piece reflects different industries and brand personalities.',
     id: 'c-002-f-003-p-003',
     name: 'other-logos',
     title: 'Other Logos',

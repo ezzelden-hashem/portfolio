@@ -1,7 +1,7 @@
 <div class="container">
   <div class="category" [class.activateSelection]="selected()">
     <div class="title">{{ categoryInfo().title }}</div>
-    <div class="category-icon" id="category-icon-id" #category_icon></div>
+    <div class="category-icon pad-0" id="category-icon-id" #category_icon></div>
   </div>
   <div class="category-content-tree" [style.height]="selected() ? categoryTreeHeight() : '0'">
 
