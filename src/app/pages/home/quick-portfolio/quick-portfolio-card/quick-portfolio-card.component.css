@@ -37,6 +37,7 @@
 .quick-portfolio-card:hover
 {
     transform: translateY(-5px);
+    box-shadow: 0 5px 20px #32323234;
 }
 .quick-portfolio-card:hover .qpc-image img
 {

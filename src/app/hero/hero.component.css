@@ -37,13 +37,20 @@
 }
 .hero .image
 {
-    /* background-image: url(./../../assets/imgs/portfolio-picture-02.jpg); */
+    background-image: url(./../../assets/imgs/avatar-2.png);
     background-position: center;
     background-size: cover;
     width: 250px;
     height: 300px;
     border: 1px solid gray;
     border-radius: 20px;
+    margin-right: 50px;
+}
+.hero img
+{
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
     margin-right: 50px;
 }
 .hero-btn

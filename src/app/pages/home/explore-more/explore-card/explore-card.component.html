@@ -1,0 +1,9 @@
+<div class="explore-card" [class.explore-card-active]="activated()">
+    <div class="explore-card-content">
+        <div class="explore-card-icon svg-fill-01 pad-5" #exploreCardIcon></div>
+        <div class="explore-card-title"> {{ exploreCardData().title }} </div>
+        <div class="explore-card-description"> {{ exploreCardData().description }} </div>
+    </div>
+    
+    <button class="explore-card-btn" (click)="gotoSection()">See {{ exploreCardData().title }}</button>
+</div>

@@ -4,9 +4,9 @@
     --bgc-main             : #ededed54;
     --bgc-accent-01        : #16445c;
     --font-size-main-title : 30px;
-    --font-size-p-lg : 24px;
-    --font-size-p-md : 20px;
-    --font-size-p-sm : 16px;
+    --font-size-p-lg       : 24px;
+    --font-size-p-md       : 20px;
+    --font-size-p-sm       : 16px;
     --fgc-main             : var(--bgc-accent-01);
     --pad-lg               : 50px;
     --pad-lm               : 35px;
@@ -21,6 +21,7 @@
     --br-style-01          : 1px solid #8080802e;
     --fill-01              : var(--bgc-accent-01);
     --fill-02              : #ff0000;
+    --fill-03              : #ffffff;
 }
 @font-face {
     font-family: bahnschrift;
@@ -68,6 +69,7 @@ a
 
 .svg-fill-01 *, .svg-fill-01 * * { fill: var(--fill-01);    }
 .svg-fill-02 *, .svg-fill-02 * * { fill: var(--fill-02);    }
+.svg-fill-03 *, .svg-fill-03 * * { fill: var(--fill-03);    }
 
 @media (max-width: 700px) {
     

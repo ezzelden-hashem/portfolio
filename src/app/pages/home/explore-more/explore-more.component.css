@@ -1,0 +1,55 @@
+.explore-more
+{
+    background-color: var(--bgc-main);
+    border: var(--br-style-01);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    gap: 20px;
+    padding: 30px;
+}
+.explore-more-cards-wrapper
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding: 30px;
+}
+.explore-more::-webkit-scrollbar
+{
+    display: none;
+}
+.scroll-btn
+{
+    background-color: #e9ecf0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    border: 1px solid #c0c3c7;
+    font-family: bahnschrift;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+.scroll-btn:hover
+{
+    background-color: #d6d9dd;
+}
+.scroll-btn.left
+{
+    left: 10px;
+}
+.scroll-btn.right
+{
+    right: 10px;
+}

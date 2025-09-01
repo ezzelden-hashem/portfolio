@@ -1,0 +1,11 @@
+<div class="explore-more">
+    <button class="scroll-btn left" (click)="scrollLeft()"><</button>
+    
+    <div #slider class="explore-more-cards-wrapper">
+        @for (section of exploreSections; track $index) {
+            <app-explore-card [exploreCardData]="section" [activated]="$index === 0"/>
+        }
+    </div>
+    
+    <button class="scroll-btn right" (click)="scrollRight()">></button>
+</div>

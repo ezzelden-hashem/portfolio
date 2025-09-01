@@ -4,7 +4,8 @@
 }
 .quick-portfolio
 {
-    margin: 20px 0;
+    /* margin: 20px 0; */
+    margin-top: 20px;
     background-color: #ffffff;
     /* border: 1px solid red; */
     min-height: 600px;
