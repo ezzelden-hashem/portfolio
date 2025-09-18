@@ -1,0 +1,21 @@
+<div class="description-card">
+    <div class="description-card-header">
+        <div class="description-card-h-icon"> {{ cardData().icon }} </div>
+        <div class="description-card-h-title"> {{ cardData().title }} </div>
+    </div>
+    <div class="description-card-body">
+        @if (linesLimit() === 'default')
+        {
+            <app-paragraph [text]="cardData().description"/>
+        }
+        @else if (linesLimit() === 'null') 
+        {
+            {{ cardData().description }}
+        }
+        @else 
+        {
+            <app-paragraph [text]="cardData().description" [lineLimit]="+linesLimit()"/>
+        }
+        
+    </div>
+</div>

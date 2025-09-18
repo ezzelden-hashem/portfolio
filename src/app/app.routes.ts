@@ -22,6 +22,14 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/about/about.component').then((m) => m.AboutComponent)
     },
     {
+        path: 'skills',
+        loadComponent: () => import('./pages/skills/skills.component').then((m) => m.SkillsComponent)
+    },
+    {
+        path: 'contact',
+        loadComponent: () => import('./pages/contact/contact.component').then((m) => m.ContactComponent)
+    },
+    {
             path: '**',
             component: UrlResolverComponent
     },

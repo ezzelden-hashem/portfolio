@@ -10,6 +10,15 @@ div
     overflow: hidden;
     text-overflow: ellipsis;
     width: calc(100% - 20px);
+    /* border: 1px solid red; */
+    transition: 350ms;
+}
+.collapsed
+{
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .dot
 {

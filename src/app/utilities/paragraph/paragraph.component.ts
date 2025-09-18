@@ -1,40 +1,55 @@
-import { AfterViewInit, Component, ElementRef, input, signal, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, inject, input, Renderer2, signal, ViewChild } from '@angular/core';
+import { TimingService } from '../../services/util/timing.service';
 
 @Component({
   selector: 'app-paragraph',
   imports: [],
   templateUrl: './paragraph.component.html',
-  styleUrl: './paragraph.component.css'
+  styleUrl: './paragraph.component.css',
 })
 export class ParagraphComponent implements AfterViewInit{
   @ViewChild('paragraph') paragraph!: ElementRef<HTMLDivElement>;
+  @ViewChild('textContainer') textContainer!: ElementRef<HTMLDivElement>;
+  renderer = inject(Renderer2);
+  timing = inject(TimingService)
   text = input.required<string>();
-  limit = input<number>(100);
+  lineLimit = input<number>(3);
   isExpanded = signal<boolean>(false);
-
-  truncatedText()
-  {
-    return this.text().substring(0, this.limit()) + '...';
-  }
+  expandedHeight = signal<null | number>(null);
+  collapsedHeight = signal<null | number>(null);
 
   toggle() {
     this.isExpanded.update(v => !v);
-    this.resetHeight()
+    this.toggleHeight();
   }
-  resetHeight()
-  {
-    if(this.isExpanded())
+  async ngAfterViewInit() {
+    if ([...this.textContainer.nativeElement.classList].includes('collapsed'))
     {
-      this.paragraph.nativeElement.style.height = 
-      this.paragraph.nativeElement.scrollHeight + 'px';
+      this.renderer.setStyle(this.textContainer.nativeElement, 'line-clamp', this.lineLimit() + '');
+      this.renderer.setStyle(this.textContainer.nativeElement, '-webkit-line-clamp', this.lineLimit() + '');
+    }
+    this.collapsedHeight.set(this.textContainer.nativeElement.offsetHeight);
+    this.textContainer.nativeElement.classList.remove('collapsed');
+    await this.timing.delay(20);
+    const oh = this.textContainer.nativeElement.offsetHeight;
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const oh = this.textContainer.nativeElement.offsetHeight;
+        this.expandedHeight.set(this.textContainer.nativeElement.scrollHeight);
+        this.textContainer.nativeElement.style.height = this.collapsedHeight() + 'px';
+      })
+    })
+    
+  }
+  toggleHeight()
+  {
+    if (this.isExpanded())
+    {
+      this.renderer.setStyle(this.textContainer.nativeElement, 'height', this.expandedHeight() + 'px')
     }
     else
     {
-      this.paragraph.nativeElement.style.height = this.limit() + 'px';
+      this.renderer.setStyle(this.textContainer.nativeElement, 'height', this.collapsedHeight() + 'px')
     }
-    
-  }
-  ngAfterViewInit(): void {
-    this.resetHeight();
   }
 }

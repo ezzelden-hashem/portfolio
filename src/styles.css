@@ -70,7 +70,11 @@ a
 .svg-fill-01 *, .svg-fill-01 * * { fill: var(--fill-01);    }
 .svg-fill-02 *, .svg-fill-02 * * { fill: var(--fill-02);    }
 .svg-fill-03 *, .svg-fill-03 * * { fill: var(--fill-03);    }
-
+.line-brake
+{
+    display: block;
+    margin: 5px 0;
+}
 @media (max-width: 700px) {
     
 }

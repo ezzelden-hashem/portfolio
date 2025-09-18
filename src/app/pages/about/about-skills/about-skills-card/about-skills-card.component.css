@@ -1,10 +1,8 @@
-.explore-card
+.a-skill-card
 {
     background-color: #eceef395;
-    /* backdrop-filter: blur(20px); */
-    min-height: 370px;
     min-width: 250px;
-    max-width: 400px;
+    max-width: 300px;
     border-radius: 30px;
     flex-grow: 1;
     display: flex;
@@ -14,27 +12,24 @@
     padding: 25px;
     transition: 250ms;
 }
-.explore-card-content
+.a-skill-card-content
 {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.explore-card:hover
+.a-skill-card:hover
 {
-    /* min-width: 400px; */
     transform: scale(1.05) translateY(5px);
     box-shadow: 0 0 20px #32323234;
     
 }
-.explore-card-active:hover
+.a-skill-card-active:hover
 {
-    /* min-width: 400px; */
     transform: scale(1.05) translateY(5px);
     box-shadow: 0 0 20px #32323234;
-    
 }
-.explore-card-icon
+.a-skill-card-icon
 {
     color: #154b7a;
     background-color: #99cfff;
@@ -46,51 +41,52 @@
     align-items: center;
     font-family: bahnschrift;
     font-size: var(--font-size-p-lg);
+    margin-bottom: 15px;
 }
-.explore-card-title
+.a-skill-card-title
 {
     font-family: bahnschrift;
     font-size: var(--font-size-p-md);
     color: var(--fgc-main);
 }
-.explore-card-description
+.a-skill-card-description
 {
     font-family: bahnschrift;
     font-size: var(--font-size-p-sm);
     color: #3d3d3d;
 }
-.explore-card-active, .explore-card-active *
+.a-skill-card-active, .a-skill-card-active *
 {
     color: #fff;
     background-color: #2671b3;
 }
-.explore-card-active svg
+.a-skill-card-active svg
 {
     background: none;
 }
-.explore-card-active .explore-card-icon
+.a-skill-card-active .a-skill-card-icon
 {
     color: #154b7a;
     background-color: #99cfff;
 }
-.explore-card-active .explore-card-btn
+.a-skill-card-active .a-skill-card-btn
 {
     color: #154b7a;
     background-color: #99cfff;
 }
-.explore-card-active .explore-card-btn:hover
+.a-skill-card-active .a-skill-card-btn:hover
 {
     background-color: #86b4dc;
 }
-.explore-card-active .explore-card-btn:active
+.a-skill-card-active .a-skill-card-btn:active
 {
     background-color: #99cfff;
 }
-.explore-card-active .explore-card-description
+.a-skill-card-active .a-skill-card-description
 {
     color: #e1e1e1;
 }
-.explore-card-btn
+.a-skill-card-btn
 {
     background-color: #f6f6f6;
     width: 200px;
@@ -101,29 +97,25 @@
     font-family: bahnschrift;
     font-size: var(--font-size-p-md);
 }
-.explore-card-btn:hover
+.a-skill-card-btn:hover
 {
     background-color: #e4e4e4;
 }
-.explore-card-btn:active
+.a-skill-card-btn:active
 {
     background-color: #f6f6f6;
 }
 @media (max-width: 700px) {
-    .explore-card
+    .a-skill-card
     {
-        min-height: 300px;
-        /* min-width: 250px; */
         max-width: 300px;
         padding: 20px;
     }
-    .explore-card-active
+    .a-skill-card-active
     {
-        min-height: 300px;
-        /* min-width: 250px; */
         max-width: 300px;
     }
-    .explore-card:hover 
+    .a-skill-card:hover 
     {
         transform: scale(1) translateY(0px);
         box-shadow: none;

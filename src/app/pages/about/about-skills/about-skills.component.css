@@ -2,10 +2,15 @@
 {
     width: 100%;
 }
-.explore-more
+.a-skills-title
 {
-    /* width: 100vw !important; */
-    width: 100% !important;
+    padding: 20px;
+    padding-left: 35px;
+    font-size: 25px;
+}
+.about-skills
+{
+    width: inherit;
     background-color: var(--bgc-main);
     border: var(--br-style-01);
     backdrop-filter: blur(20px);
@@ -17,18 +22,19 @@
     gap: 20px;
     padding: 30px;
 }
-.explore-more-cards-wrapper
+.a-skills-cards-wrapper
 {
-    width: 100%;
+    width: inherit;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
     gap: 20px;
     overflow-x: auto;
+    overflow-y: hidden;
     scrollbar-width: none;
     scroll-behavior: smooth;
     padding: 30px;
 }
-.explore-more::-webkit-scrollbar
+.about-skills::-webkit-scrollbar
 {
     display: none;
 }
@@ -60,11 +66,16 @@
     right: 10px;
 }
 @media (max-width: 700px) {
-    .explore-more
+    .a-skills-title
+    {
+        padding-left: 15px;
+        font-size: 20px;
+    }
+    .about-skills
     {
         padding: 10px;
     }
-    .explore-more-cards-wrapper
+    .a-skills-cards-wrapper
     {
         padding: 15px;
     }
@@ -80,5 +91,11 @@
     .scroll-btn.right
     {
         transform: translateX(7px);
+    }
+}
+@media (max-width: 1200px) {
+    .about-skills
+    {
+        /* width: 100vw !important; */
     }
 }

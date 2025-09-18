@@ -4,6 +4,7 @@
 }
 :host
 {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +12,25 @@
 .about
 {
     width: 100%;
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.quick-info
+{
+    display: flex;
+    gap: 10px;
+    
+}
+.side-card
+{
+    width: 100vw;
+    color: #00558a; 
+    background-color: #ededed54;
+    backdrop-filter: blur(20px);
+    border: 1px solid red;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 .about *
 {
@@ -97,7 +116,7 @@
     margin: 10px 0;
     margin-bottom: 20px;
 }
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .about
     {
         margin-top: 30px;
@@ -112,4 +131,4 @@
         width: 30px;
         height: 30px;
     }
-}
+} */
