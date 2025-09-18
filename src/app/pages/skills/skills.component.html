@@ -1,1 +1,145 @@
-<p>skills works!</p>
+<!-- Introduction Section -->
+<section class="intro-section">
+  <div class="container">
+    <div class="intro-content">
+      <h1 class="intro-title">
+        <span class="highlight">Technical</span> Skills
+      </h1>
+      <p class="intro-subtitle">
+        Passionate full-stack developer with expertise in modern web
+        technologies and a strong foundation in software development principles.
+      </p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">{{ totalSkills }}</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">{{ experienceYears }}+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">{{ skillGroups.length }}</div>
+          <div class="stat-label">Skill Categories</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills-section">
+  <div class="container">
+    <h2 class="section-title">Skills & Expertise</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group-card" *ngFor="let group of skillGroups">
+        <div class="group-header">
+          <div class="group-icon" [innerHTML]="group.icon"></div>
+          <h3 class="group-title">{{ group.title }}</h3>
+        </div>
+
+        <div class="skills-list">
+          <div class="skill-item" *ngFor="let skill of group.skills">
+            <div class="skill-info">
+              <div class="skill-icon" [innerHTML]="skill.icon"></div>
+              <span class="skill-name">{{ skill.name }}</span>
+            </div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" [style.width.%]="skill.level"></div>
+              </div>
+              <span class="level-text">{{ skill.level }}%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Additional Skills Information -->
+<section class="info-section">
+  <div class="container">
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-icon">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+            <path d="M2 12l10 5 10-5" />
+          </svg>
+        </div>
+        <h3 class="info-title">Full-Stack Development</h3>
+        <p class="info-description">
+          Experienced in building complete web applications from responsive
+          frontends to scalable backend APIs with modern frameworks and best
+          practices.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+            />
+          </svg>
+        </div>
+        <h3 class="info-title">Modern Development</h3>
+        <p class="info-description">
+          Proficient in latest web technologies, TypeScript, reactive
+          programming with RxJs, and component-based architecture with Angular.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            />
+          </svg>
+        </div>
+        <h3 class="info-title">Version Control</h3>
+        <p class="info-description">
+          Experienced with Git workflows, collaborative development on GitHub,
+          and maintaining clean, well-documented codebases.
+        </p>
+      </div>
+    </div>
+
+    <div class="learning-section">
+      <h3 class="learning-title">Continuous Learning</h3>
+      <p class="learning-text">
+        I'm always exploring new technologies and improving my skills. Currently
+        focusing on advanced Angular patterns, .NET Core development, and cloud
+        technologies to stay current with industry trends.
+      </p>
+    </div>
+  </div>
+</section>
+
+<app-footer/>
