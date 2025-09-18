@@ -32,15 +32,15 @@
 }
 #svg-folder-icon-path-01
 {
-    fill: #0d305e;
+    fill: var(--color-62);
 }
 #svg-folder-icon-path-02
 {
-    fill: #1c4a87;
+    fill: var(--color-63);
 }
 .folder-card-title
 {
-    color: #fff;
+    color: var(--color-03);
     font-family: bahnschrift;
     width: 100%;
     height: 100%;
@@ -73,9 +73,9 @@
     }
     .folder-card
     {
-        background-color: #ededed3b;
+        background-color: var(--color-81);
         backdrop-filter: blur(20px);
-        border: 1px solid #8080802e;
+        border: var(--br-style-001);
         border-radius: 10px;
         flex: 1 1 100%;
         max-width: 100%;
@@ -101,11 +101,11 @@
     }
     .folder-icon svg, .folder-icon svg *
     {
-        fill: #16445c;
+        fill: var(--color-01);
     }
     .folder-card-title
     {
-        color: #16445c;
+        color: var(--color-01);
         font-family: bahnschrift;
         width: 100%;
         position: initial;

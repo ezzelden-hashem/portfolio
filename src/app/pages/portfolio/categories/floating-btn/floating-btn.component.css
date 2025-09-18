@@ -5,8 +5,8 @@
     left: 15px;
     width: 35px;
     height: 35px;
-    color: white;
-    background-color: #00558a;
+    color: var(--color-03);
+    background-color: var(--color-13);
     font-size: 25px;
     font-family: bahnschrift;
     display: none;

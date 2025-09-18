@@ -5,10 +5,9 @@
 }
 .category
 {
-    background-color: #ededed54;
-    background-color: #d6ddea54;
+    background-color: var(--color-55);
     backdrop-filter: blur(20px);
-    border: 1px solid #8080802e;
+    border: var(--br-style-001);
     width: 100%;
     height: 45px;
     border-radius: 10px;
@@ -23,34 +22,34 @@
 }
 .category:hover
 {
-    background-color: #0076fc2e;
+    background-color: var(--color-71);
 }
 .category:active
 {
-    color: white;
-    background-color: #0050abfb;
+    color: var(--color-03);
+    background-color: var(--color-72);
 }
 .category:active .category-icon svg
 {
-    fill: white;
+    fill: var(--color-03);
 }
 .category:active .category-icon svg *
 {
-    fill: white;
+    fill: var(--color-03);
 }
 .activateSelection
 {
-    color: white;
-    background-color: #0050abfb;
+    color: var(--color-03);
+    background-color: var(--color-72);
 }
 .activateSelection:hover
 {
-    color: white;
-    background-color: #0050abfb;
+    color: var(--color-03);
+    background-color: var(--color-72);
 }
 .activateSelection svg, .activateSelection svg *
 {
-    fill: white !important;
+    fill: var(--color-03) !important;
 }
 .title
 {
@@ -64,7 +63,7 @@
 }
 .category-icon svg, .category-icon svg *
 {
-    fill: #525252;
+    fill: var(--color-54);
 }
 @property --tree-height {
   syntax: "<length>";
@@ -73,7 +72,6 @@
 }
 .category-content-tree
 {
-    /* background-color: #bdbdbd; */
     width: 100%;
     display: flex;
     height: var(--ttr);

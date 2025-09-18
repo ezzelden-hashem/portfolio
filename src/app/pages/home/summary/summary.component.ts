@@ -8,7 +8,7 @@ import { ParagraphComponent } from "../../../utilities/paragraph/paragraph.compo
 
 
 const animationDuration = 1000;
-
+let blobs: string[] = []
 @Component({
   selector: 'app-summary',
   imports: [SummaryCardComponent, ParagraphComponent],
@@ -46,10 +46,13 @@ export class SummaryComponent implements AfterViewInit{
   destroyRef = inject(DestroyRef);
   timingService = inject(TimingService);
   @ViewChild('quickIcon') quickIcon!: ElementRef<HTMLImageElement>;
-  iconsUrl = IconsUrl
+
+  iconsUrl = blobs;
+  
   animationState: 'visible' | 'hidden' | 'repopulate' = 'visible';
   private isAlive = true;
   ngAfterViewInit(): void {
+    this.loadIcons(IconsUrl);
     const mainThis = this;
     async function animationLoop()
     {
@@ -74,5 +77,19 @@ export class SummaryComponent implements AfterViewInit{
     }
     animationLoop()
     this.destroyRef.onDestroy(() => this.isAlive = false);
+  }
+  async getBlobUrl(imageUrl: string) {
+    const response = await fetch(imageUrl);
+    const blob = await response.blob();
+    return URL.createObjectURL(blob);
+  }
+  loadIcons(urls: string[])
+  {
+    for (const url of urls)
+    {
+      this.getBlobUrl(url).then((blobUrl) => {
+        blobs.push(blobUrl);
+      })
+    }
   }
 }

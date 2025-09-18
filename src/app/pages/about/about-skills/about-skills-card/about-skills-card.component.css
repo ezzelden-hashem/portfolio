@@ -1,6 +1,6 @@
 .a-skill-card
 {
-    background-color: #eceef395;
+    background-color: var(--color-49);
     min-width: 250px;
     max-width: 300px;
     border-radius: 30px;
@@ -21,18 +21,18 @@
 .a-skill-card:hover
 {
     transform: scale(1.05) translateY(5px);
-    box-shadow: 0 0 20px #32323234;
+    box-shadow: 0 0 20px var(--color-47);
     
 }
 .a-skill-card-active:hover
 {
     transform: scale(1.05) translateY(5px);
-    box-shadow: 0 0 20px #32323234;
+    box-shadow: 0 0 20px var(--color-47);
 }
 .a-skill-card-icon
 {
-    color: #154b7a;
-    background-color: #99cfff;
+    color: var(--color-27);
+    background-color: var(--color-28);
     width: 50px;
     height: 50px;
     border-radius: 8px;
@@ -47,18 +47,18 @@
 {
     font-family: bahnschrift;
     font-size: var(--font-size-p-md);
-    color: var(--fgc-main);
+    color: var(--color-01);
 }
 .a-skill-card-description
 {
     font-family: bahnschrift;
     font-size: var(--font-size-p-sm);
-    color: #3d3d3d;
+    color: var(--color-29);
 }
 .a-skill-card-active, .a-skill-card-active *
 {
-    color: #fff;
-    background-color: #2671b3;
+    color: var(--color-03);
+    background-color: var(--color-30);
 }
 .a-skill-card-active svg
 {
@@ -66,44 +66,44 @@
 }
 .a-skill-card-active .a-skill-card-icon
 {
-    color: #154b7a;
-    background-color: #99cfff;
+    color: var(--color-27);
+    background-color: var(--color-28);
 }
 .a-skill-card-active .a-skill-card-btn
 {
-    color: #154b7a;
-    background-color: #99cfff;
+    color: var(--color-27);
+    background-color: var(--color-28);
 }
 .a-skill-card-active .a-skill-card-btn:hover
 {
-    background-color: #86b4dc;
+    background-color: var(--color-31);
 }
 .a-skill-card-active .a-skill-card-btn:active
 {
-    background-color: #99cfff;
+    background-color: var(--color-28);
 }
 .a-skill-card-active .a-skill-card-description
 {
-    color: #e1e1e1;
+    color: var(--color-32);
 }
 .a-skill-card-btn
 {
-    background-color: #f6f6f6;
+    background-color: var(--color-33);
     width: 200px;
     min-height: 40px;
     border-radius: 40px;
-    border: var(--br-style-01);
+    border: var(--br-style-017);
     transition: 100ms;
     font-family: bahnschrift;
     font-size: var(--font-size-p-md);
 }
 .a-skill-card-btn:hover
 {
-    background-color: #e4e4e4;
+    background-color: var(--color-34);
 }
 .a-skill-card-btn:active
 {
-    background-color: #f6f6f6;
+    background-color: var(--color-33);
 }
 @media (max-width: 700px) {
     .a-skill-card

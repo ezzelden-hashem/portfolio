@@ -6,9 +6,9 @@
 }
 .view-window
 {
-    background-color: #ededed54;
+    background-color: var(--color-02);
     backdrop-filter: blur(20px);
-    border: 1px solid #8080802e;
+    border: var(--br-style-001);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
 }
 .view-window .title
 {
-    color: #16445c;
+    color: var(--color-01);
     font-size: 22px;
     font-weight: bold;
     font-family: bahnschrift;

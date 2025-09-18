@@ -4,16 +4,14 @@
 }
 .quick-portfolio
 {
-    /* margin: 20px 0; */
     margin-top: 20px;
-    background-color: #ffffff;
-    /* border: 1px solid red; */
+    background-color: var(--color-03);
     min-height: 600px;
     padding: 50px 20px;
 }
 .quick-portfolio .title
 {
-    color: var(--fgc-main);
+    color: var(--color-01);
     display: flex;
     justify-content: center;
     font-family: bahnschrift;

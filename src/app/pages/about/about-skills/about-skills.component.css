@@ -11,8 +11,8 @@
 .about-skills
 {
     width: inherit;
-    background-color: var(--bgc-main);
-    border: var(--br-style-01);
+    background-color: var(--color-02);
+    border: var(--br-style-017);
     backdrop-filter: blur(20px);
     width: 100%;
     display: flex;
@@ -40,12 +40,12 @@
 }
 .scroll-btn
 {
-    background-color: #e9ecf0;
+    background-color: var(--color-25);
     width: 50px;
     height: 50px;
     border-radius: 50px;
     position: absolute;
-    border: 1px solid #c0c3c7;
+    border: var(--br-style-002);
     font-family: bahnschrift;
     font-size: 25px;
     display: flex;
@@ -55,7 +55,7 @@
 }
 .scroll-btn:hover
 {
-    background-color: #d6d9dd;
+    background-color: var(--color-26);
 }
 .scroll-btn.left
 {

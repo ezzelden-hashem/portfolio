@@ -1,6 +1,5 @@
 *
 {
-    /* border: 1px solid rgb(154, 13, 0); */
     font-size: 20px;
     font-family: bahnschrift;
     user-select: none;
@@ -11,7 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 20px !important; */
 }
 header
 {
@@ -26,9 +24,9 @@ header
     align-items: center;
     margin-top: 20px;
     position: fixed;
-    background-color: #ededed54;
+    background-color: var(--color-02);
     backdrop-filter: blur(20px);
-    border: 1px solid #8080802e;
+    border: var(--br-style-001);
     border-radius: 15px;
     z-index: 10;
     transition: 250ms;
@@ -46,22 +44,12 @@ a
 }
 .title .icon
 {
-    /* background-color: #d4d4d4; */
-    /* background-image: url(./../../../assets/imgs/profile-picture.jpg);
-    background-position: center;
-    background-size: cover; */
     width: 40px;
     height: 40px;
-    /* border-radius: 40px; */
-    /* padding: 5px; */
 }
-/* .title .icon svg
-{
-    fill: #16445c;
-} */
 .title .text, .navigation nav li
 {
-    color: #16445c;
+    color: var(--color-01);
 }
 .navigation
 {
@@ -93,21 +81,17 @@ a
     border-radius: 7px;
     transition: border-color 300ms;
     cursor: pointer;
-    border-color: #00639800;
+    border-color: var(--color-82);
     border-width: 2px;
     border-style: solid;
 }
 .navigation nav li:hover
 {
-    /* color: white; */
-    /* background-color: #006398; */
-    border-color: #c9c9c9;
-    /* backdrop-filter: blur(15px); */
+    border-color: var(--color-04);
 }
 .nav-btn
 {
-    /* background-color: #939393; */
-    border: 4px solid #d4d4d4;
+    border: var(--br-style-015);
     width: 40px;
     height: 40px;
     display: none;
@@ -119,24 +103,21 @@ a
 }
 .nav-btn .nb-line
 {
-    background-color: #8b8b8b;
-    /* background-color: #ffffff; */
+    background-color: var(--color-22);
     width: 100%;
     height: 4px;
     border-radius: 5px;
 }
 .solid-btn
 {
-    color: hsl(0, 0%, 100%) !important;
-    /* background-color: hsl(209, 89%, 41%); */
-    background-color: hsl(203, 100%, 27%);
+    color: var(--color-03) !important;
+    background-color: var(--color-13);
     border: none !important;
     transition: 200ms !important;
-
 }
 .solid-btn:hover
 {
-    background-color: hsl(203, 100%, 40%);
+    background-color: var(--color-68);
 }
 :host, .navigation nav ul
 {

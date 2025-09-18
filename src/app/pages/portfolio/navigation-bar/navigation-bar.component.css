@@ -1,8 +1,8 @@
 .nav-bar
 {
-    background-color: #ededed54;
+    background-color: var(--color-02);
     backdrop-filter: blur(20px);
-    border: 1px solid #8080802e;
+    border: var(--br-style-001);
     width: 100%;
     height: 40px;
     display: flex;
@@ -14,13 +14,13 @@
 }
 .segment
 {
-    background-color: #d6ddea54;
+    background-color: var(--color-55);
     font-size: 17px;
     font-family: bahnschrift;
     width: max-content;
     height: 25px;
     padding: 0 10px;
-    border: 1px solid #00000000;
+    border: var(--br-style-006);
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -28,8 +28,8 @@
 }
 .segment:hover
 {
-    background-color: #a7b4cd54;
-    border: 1px solid #68779454;
+    background-color: var(--color-78);
+    border: var(--br-style-007);
 }
 .segment.separator
 {
@@ -39,7 +39,7 @@
 }
 .separator
 {
-    color: #535a67d4;
+    color: var(--color-79);
     display: flex;
     align-items: center;
     margin: 0 10px;

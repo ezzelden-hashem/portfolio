@@ -1,6 +1,6 @@
 .nav-page
 {
-    background-color: #000000ab;
+    background-color: var(--color-23);
     backdrop-filter: blur(10px) saturate(0);
     position: fixed;
     top: 0;
@@ -25,7 +25,7 @@
 }
 .nav-page nav ul a
 {
-    color: white;
+    color: var(--color-03);
     display: flex;
     justify-content: center;
     align-items: center;

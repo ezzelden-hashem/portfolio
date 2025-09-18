@@ -9,10 +9,10 @@
 .project
 {
     width: 95%;
-    background-color: #ba8be454;
+    background-color: var(--color-57);
     backdrop-filter: blur(20px);
     backdrop-filter: blur(0px);
-    border: 1px solid #8080802e;
+    border: var(--br-style-001);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,7 @@
 }
 .project:hover
 {
-    background-color: #906bb054;
+    background-color: var(--color-75);
 }
 .project-title
 {
@@ -49,10 +49,10 @@
 }
 .selected-project
 {
-    background-color: #9970bc54;
-    border: 2px solid #6f409654;
+    background-color: var(--color-76);
+    border: var(--br-style-013);
 }
 .selected-project:hover
 {
-    background-color: #7b5b9654;
+    background-color: var(--color-77);
 }

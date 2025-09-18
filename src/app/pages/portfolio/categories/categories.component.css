@@ -6,9 +6,9 @@
 }
 .categories
 {
-    background-color: #ededed54;
+    background-color: var(--color-02);
     backdrop-filter: blur(20px);
-    border: 1px solid #8080802e;
+    border: var(--br-style-001);
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -27,8 +27,8 @@
     font-size: 20px;
 }
 .show-categories-btn{
-    color: white;
-    background-color: #00558a;
+    color: var(--color-03);
+    background-color: var(--color-13);
     font-size: 25px;
     font-family: bahnschrift;
     display: flex;

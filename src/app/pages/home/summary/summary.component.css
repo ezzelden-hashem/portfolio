@@ -1,7 +1,3 @@
-*
-{
-    /* border: 1px solid red; */
-}
 :host
 {
     width: 100%;
@@ -14,7 +10,7 @@
 }
 .summary
 {
-    background-color: var(--bgc-main);
+    background-color: var(--color-02);
     width: 100%;
     min-height: 200px;
     display: flex;
@@ -23,12 +19,12 @@
     gap: 20px;
     padding: var(--pad-lg);
     border-radius: var(--br-radius-md);
-    border: var(--br-style-01);
+    border: var(--br-style-017);
     backdrop-filter: blur(20px);
 }
 .summary .title
 {
-    color: var(--fgc-main);
+    color: var(--color-01);
     font-size: var(--font-size-main-title);
     font-family: bahnschrift;
 }
@@ -48,7 +44,7 @@
 }
 .summary-card
 {
-    background-color: rgb(236, 238, 243);
+    background-color: var(--color-49);
     min-width: 200px;
     min-height: 180px;
     border-radius: 10px;
@@ -61,8 +57,8 @@
 }
 .sc-icon
 {
-    color: #154b7a;
-    background-color: #99d0ff;
+    color: var(--color-27);
+    background-color: var(--color-52);
     width: 50px;
     height: 50px;
     border-radius: 8px;
@@ -76,22 +72,19 @@
 {
     font-family: bahnschrift;
     font-size: var(--font-size-p-md);
-    color: var(--fgc-main);
+    color: var(--color-01);
 }
 .sc-details
 {
     font-family: bahnschrift;
     font-size: var(--font-size-p-sm);
-    color: #8a8a8a;
-    /* height: 300px;
-    border: 1px solid red; */
+    color: var(--color-53);
 }
 .summary-p
 {
     width: 100%;
     font-size: var(--font-size-p-md);
     display: flex;
-    /* align-items: center; */
     transition: 250ms ease-out;
 }
 .quick-icon
@@ -104,10 +97,8 @@
     height: inherit;
     object-fit: cover;
     object-position: center;
-    /* animation: floating 1s ease-in-out infinite alternate; */
     transition: opacity 600ms cubic-bezier(.68,-0.55,.27,1.55);
     will-change: opacity, transform;
-    /* transform: scale(1.1); */
 }
 @keyframes floating {
     0%
@@ -140,7 +131,6 @@
     .summary-cards-wrapper
     {
         width: 100%;
-        /* flex-shrink: 1; */
         justify-content: center;
     }
     .summary-info

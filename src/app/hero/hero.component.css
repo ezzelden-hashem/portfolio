@@ -7,11 +7,11 @@
 }
 .hero
 {
-    background-color: #ededed54;
+    background-color: var(--color-02);
     width: 100%;
     border-radius: var(--br-radius-md);
     backdrop-filter: blur(20px);
-    border: var(--br-style-01);
+    border: var(--br-style-017);
     padding: 50px;
     display: flex;
     justify-content: space-between;
@@ -24,14 +24,14 @@
 }
 .hero .text .greeting
 {
-    color: #00558a;
+    color: var(--color-13);
     font-size: 60px;
     font-family: bahnschrift;
     font-weight: bold;
 }
 .hero .text .details
 {
-    color: #002740;
+    color: var(--color-24);
     font-size: 20px;
     font-family: bahnschrift;
 }
@@ -42,7 +42,6 @@
     background-size: cover;
     width: 250px;
     height: 300px;
-    border: 1px solid gray;
     border-radius: 20px;
     margin-right: 50px;
 }
@@ -67,16 +66,16 @@
 }
 .solid
 {
-    color: white;
-    background-color: hsl(203, 100%, 27%);
+    color: var(--color-03);
+    background-color: var(--color-13);
 }
 .solid:hover
 {
-    background-color: hsl(203, 100%, 40%);
+    background-color: var(--color-68);
 }
 .wireframe
 {
-    border: 2px solid #00558a;
+    border: var(--br-style-009);
 }
 @media (max-width: 900px) {
     .hero
@@ -90,6 +89,10 @@
     .hero .name
     {
         font-size: 30px;
+    }
+    .hero img
+    {
+        margin: 0;
     }
 }
 @media (max-width: 700px) {
@@ -105,6 +108,10 @@
     {
         width: 200px;
         height: 250px;
+        margin: 0;
+    }
+    .hero img
+    {
         margin: 0;
     }
 }
@@ -124,5 +131,10 @@
     .hero .text .name
     {
         font-size: 35px;
+    }
+    .hero img
+    {
+        width: 200px;
+        margin: 0;
     }
 }

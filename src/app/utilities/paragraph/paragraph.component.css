@@ -10,7 +10,6 @@ div
     overflow: hidden;
     text-overflow: ellipsis;
     width: calc(100% - 20px);
-    /* border: 1px solid red; */
     transition: 350ms;
 }
 .collapsed
@@ -31,5 +30,5 @@ div
 .toggler
 {
     cursor: pointer;
-    color: var(--fgc-main);
+    color: var(--color-01);
 }

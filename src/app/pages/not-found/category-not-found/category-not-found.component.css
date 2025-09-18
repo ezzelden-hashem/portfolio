@@ -9,7 +9,7 @@
 }
 .message
 {
-    color: #525252;
+    color: var(--color-54);
     max-width: 500px;
     font-size: 30px;
     font-family: bahnschrift;

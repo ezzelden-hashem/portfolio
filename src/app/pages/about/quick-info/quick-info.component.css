@@ -35,7 +35,7 @@ app-quick-info
 .a-qinfo-card
 {
     padding: 20px;
-    border: 1px solid gray;
+    border: var(--br-style-003);
     flex-grow: 1;
 }
 .a-qinfo-card-title
@@ -56,7 +56,7 @@ app-quick-info
 }
 .a-qinfo-data-key
 {
-    background-color: #eaebef;
+    background-color: var(--color-36);
     padding: 10px;
     border-radius: 5px;
     margin: 5px 0;
@@ -73,12 +73,11 @@ app-quick-info
 {
     width: 100%;
     height: 100%;
-    fill: var(--fill-01);
-    /* stroke: var(--fill-01); */
+    fill: var(--color-01);
 }
 .a-qinfo-data-value
 {
-    border: 1px solid gray;
+    border: var(--br-style-003);
     padding: 10px;
     border-radius: 5px;
 }

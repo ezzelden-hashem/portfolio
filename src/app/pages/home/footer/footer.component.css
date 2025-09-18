@@ -4,8 +4,8 @@
 }
 .footer
 {
-    color: white;
-    background-color: var(--bgc-accent-01);
+    color: var(--color-03);
+    background-color: var(--color-01);
     width: 100%;
     padding: 50px;
     display: flex;
@@ -21,7 +21,7 @@
 }
 .fc-line
 {
-    background-color: #ffffff;
+    background-color: var(--color-03);
     width: 1px;
     height: inherit;
     border-radius: 3px;
@@ -35,7 +35,7 @@
 }
 .fm-line
 {
-    background-color: #ffffff;
+    background-color: var(--color-03);
     width: 1px;
     height: inherit;
     border-radius: 3px;
@@ -64,13 +64,13 @@
 .fs-section
 {
     height: fit-content;
-    color: white;
+    color: var(--color-03);
     font-size: 20px;
     text-decoration: none;
 }
 .fs-section:hover
 {
-    color: #c5c8d4;
+    color: var(--color-48);
     text-decoration: underline;
 }
 .fc-social-media
@@ -82,7 +82,7 @@
 }
 .fc-link
 {
-    color: white;
+    color: var(--color-03);
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
@@ -108,8 +108,8 @@
 }
 .fc-contact-me
 {
-    color: var(--bgc-accent-01);
-    background-color: white;
+    color: var(--color-01);
+    background-color: var(--color-03);
     border-radius: 8px;
     padding: 10px 20px;
     display: flex;

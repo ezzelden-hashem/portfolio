@@ -1,6 +1,6 @@
 .summary-card
 {
-    background-color: #eceef395;
+    background-color: var(--color-49);
     min-width: 200px;
     min-height: 180px;
     max-width: 400px;
@@ -13,8 +13,8 @@
 }
 .sc-icon
 {
-    color: #154b7a;
-    background-color: #99cfff;
+    color: var(--color-27);
+    background-color: var(--color-28);
     width: 50px;
     height: 50px;
     border-radius: 8px;
@@ -28,11 +28,11 @@
 {
     font-family: bahnschrift;
     font-size: var(--font-size-p-md);
-    color: var(--fgc-main);
+    color: var(--color-01);
 }
 .sc-details
 {
     font-family: bahnschrift;
     font-size: var(--font-size-p-sm);
-    color: #3d3d3d;
+    color: var(--color-29);
 }

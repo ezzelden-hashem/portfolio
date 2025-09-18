@@ -1,7 +1,3 @@
-*
-{
-    /* border: 1px solid red; */
-}
 :host
 {
     width: 100%;
@@ -23,7 +19,7 @@
 }
 .category-card-wrapper-title
 {
-    color: #16445c;
+    color: var(--color-01);
     font-size: 22px;
     font-weight: bold;
     font-family: bahnschrift;
