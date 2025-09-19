@@ -4,12 +4,14 @@
 }
 .a-skills-title
 {
+    color: var(--color-64);
     padding: 20px;
     padding-left: 35px;
     font-size: 25px;
 }
 .about-skills
 {
+    color: var(--color-64);
     width: inherit;
     background-color: var(--color-02);
     border: var(--br-style-017);

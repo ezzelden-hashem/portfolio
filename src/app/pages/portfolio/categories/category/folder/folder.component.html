@@ -1,7 +1,7 @@
 <div class="container folder-container">
     <div class="folder" [class.selected-folder]="selected()">
         <div class="folder-title"> {{ folderInfo().title }} </div>
-        <div class="folder-icon" #folder_icon></div>
+        <div class="folder-icon svg-fill-01" #folder_icon></div>
     </div>
     <div class="category-content-tree folder-content-tree" [class.selected-sub-folder]="selected()" [style.height]="selected() ? folderTreeHeight() : '0'">
         @for (project of portfolioService.getFolderProjects(folderInfo().id); track $index) {

@@ -24,11 +24,12 @@ h1
 
 /* Contact Header */
 .contact-header {
-  background: linear-gradient(135deg, var(--color-01) 0%, var(--color-38) 100%);
+  background: linear-gradient(135deg, var(--color-86) 0%, var(--color-38) 100%);
   color: var(--color-03);
   padding: 4rem 0;
   position: relative;
   overflow: hidden;
+  /* opacity: 20%; */
 }
 
 .contact-header::before {
@@ -74,6 +75,7 @@ h1
 
 /* Contact Content */
 .contact-content {
+  backdrop-filter: blur(20px);
   padding: 6rem 0;
   background: var(--color-41);
 }
@@ -87,7 +89,7 @@ h1
 
 /* Contact Info */
 .info-card {
-  background: white;
+  background: var(--color-03);
   border-radius: 20px;
   padding: 2.5rem;
   box-shadow: 0 4px 20px rgba(22, 68, 92, 0.1);
@@ -343,7 +345,7 @@ h1
 /* Quick Contact */
 .quick-contact {
   padding: 4rem 0;
-  background: white;
+  background: var(--color-03);
 }
 
 .quick-contact-content {

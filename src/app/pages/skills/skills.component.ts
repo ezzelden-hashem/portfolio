@@ -10,9 +10,10 @@
 
 // }
 
-import { Component } from '@angular/core';
+import { Component, inject, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from "../home/footer/footer.component";
+import { SvgIconProviderService } from '../../services/content-management/svg-provider/svg-icon-provider.service';
 
 // Skills data interface
 interface Skill {
@@ -34,17 +35,16 @@ interface SkillGroup {
   imports: [CommonModule, FooterComponent],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class SkillsComponent {
+  svgIconProvider = inject(SvgIconProviderService);
   experienceYears = 3;
 
   skillGroups: SkillGroup[] = [
     {
       title: 'Frontend Technologies',
-      icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polyline points="16 18 22 12 16 6"/>
-        <polyline points="8 6 2 12 8 18"/>
-      </svg>`,
+      icon: 'programming-monitor-i01',
       skills: [
         {
           name: 'HTML5',

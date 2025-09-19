@@ -4,8 +4,8 @@
 }
 .footer
 {
-    color: var(--color-03);
-    background-color: var(--color-01);
+    color: var(--color-87);
+    background-color: var(--color-86);
     width: 100%;
     padding: 50px;
     display: flex;
@@ -21,7 +21,7 @@
 }
 .fc-line
 {
-    background-color: var(--color-03);
+    background-color: var(--color-87);
     width: 1px;
     height: inherit;
     border-radius: 3px;
@@ -35,7 +35,7 @@
 }
 .fm-line
 {
-    background-color: var(--color-03);
+    background-color: var(--color-87);
     width: 1px;
     height: inherit;
     border-radius: 3px;
@@ -64,7 +64,7 @@
 .fs-section
 {
     height: fit-content;
-    color: var(--color-03);
+    color: var(--color-87);
     font-size: 20px;
     text-decoration: none;
 }
@@ -82,7 +82,7 @@
 }
 .fc-link
 {
-    color: var(--color-03);
+    color: var(--color-87);
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
@@ -108,8 +108,8 @@
 }
 .fc-contact-me
 {
-    color: var(--color-01);
-    background-color: var(--color-03);
+    color: var(--color-86);
+    background-color: var(--color-87);
     border-radius: 8px;
     padding: 10px 20px;
     display: flex;

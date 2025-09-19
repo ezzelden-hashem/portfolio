@@ -61,7 +61,7 @@
 }
 .explore-card-active, .explore-card-active *
 {
-    color: var(--color-03);
+    color: var(--color-64);
     background-color: var(--color-30);
 }
 .explore-card-active svg
@@ -92,6 +92,7 @@
 }
 .explore-card-btn
 {
+    color: var(--color-64);
     background-color: var(--color-33);
     width: 200px;
     min-height: 40px;

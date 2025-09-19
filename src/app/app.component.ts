@@ -54,7 +54,7 @@ export class AppComponent implements AfterViewInit, OnInit {
     canvasElement.style.left = '0';
     canvasElement.style.width = '100%';
     canvasElement.style.height = '100vh';
-    canvasElement.style.zIndex = '-1';
+    canvasElement.style.zIndex = '-100';
     canvasElement.style.overflow = 'hidden';
     return canvasElement;
   }

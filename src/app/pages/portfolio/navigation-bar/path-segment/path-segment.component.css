@@ -1,5 +1,6 @@
 .path-segment
 {
+    color: var(--color-64);
     user-select: none;
     cursor: pointer;
 }

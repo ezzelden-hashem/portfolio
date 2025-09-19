@@ -49,10 +49,11 @@
 }
 .activateSelection svg, .activateSelection svg *
 {
-    fill: var(--color-03) !important;
+    fill: var(--color-14) !important;
 }
 .title
 {
+    color: var(--color-64);
     font-size: 16px;
     font-family: bahnschrift;
 }

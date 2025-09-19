@@ -37,6 +37,7 @@
 }
 .folder-title
 {
+    color: var(--color-64);
     width: calc(100% - 30px);
     font-size: 16px;
     font-family: bahnschrift;

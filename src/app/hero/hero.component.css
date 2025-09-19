@@ -54,6 +54,7 @@
 }
 .hero-btn
 {
+    color: var(--color-64);
     background: none;
     min-width: 120px;
     min-height: 40px;

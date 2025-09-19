@@ -35,14 +35,14 @@
     <div class="skills-grid">
       <div class="skill-group-card" *ngFor="let group of skillGroups">
         <div class="group-header">
-          <div class="group-icon" [innerHTML]="group.icon"></div>
+          <!-- <div class="group-icon" [innerHTML]="svgIconProvider.getIcon(group.icon)"></div> -->
           <h3 class="group-title">{{ group.title }}</h3>
         </div>
 
         <div class="skills-list">
           <div class="skill-item" *ngFor="let skill of group.skills">
             <div class="skill-info">
-              <div class="skill-icon" [innerHTML]="skill.icon"></div>
+              <!-- <div class="skill-icon" [innerHTML]="skill.icon"></div> -->
               <span class="skill-name">{{ skill.name }}</span>
             </div>
             <div class="skill-level">
