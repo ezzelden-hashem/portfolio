@@ -13,7 +13,24 @@ export class CircleCanvasAnimator
     // public colorList = ['#7700ffff', '#0051ffff', '#00ffffff'];
     // public colorList = ['#00ffeeff', '#00ff73ff', '#ff0073ff', '#ffffff'];
     // public colorList = ['#ff0000ff', '#ff8800ff', '#ffea00ff', '#2bff00ff']
-    public colorList = ['#9000ffff', '#ff0088ff', '#0008ffff', '#0080ffff']
+    
+    public colorsObject = {
+        'light': {
+            'blue': ['#003cffff', '#007c63ff', '#262971ff', '#0080ffff'],
+            'green': ['#11641aff', '#13523fff', '#206a82ff', '#467f6cff'],
+            'orange': ['#8a3c10ff', '#927900ff', '#571818ff'],
+            'pink': ['#7b001dff', '#632b6bff', '#1d4d5eff', '#381010ff'],
+            'purple': ['#00376eff', '#3b006eff', '#5c0554ff', '#160064ff']
+        },
+        'dark': {
+            'blue': ['#9000ffff', '#ff0088ff', '#0008ffff', '#0080ffff'],
+            'green': ['#00a6ffff', '#44ff00ff', '#d9ff00ff', '#00ffaaff'],
+            'orange': ['#ff0000ff', '#ffd500ff', '#8cff00ff', '#ff0000ff'],
+            'pink': ['#ff003cff', '#e100ffff', '#00bbffff', '#00ffd9ff'],
+            'purple': ['#0080ffff', '#0051ffff', '#ae00ffff', '#ff00b7ff']
+        },
+    }
+    public colorList = this.colorsObject.light.blue;
     // public colorList = ['#3e0085ff', '#002064ff', '#007676ff'];
     // public speedList = [500, 100, 200, 250];
     // public speedList = [10, 20, 300, 200];

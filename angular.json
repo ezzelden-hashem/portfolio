@@ -28,7 +28,17 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/app/themes/light-blue.css",
+              "src/app/themes/light-green.css",
+              "src/app/themes/light-orange.css",
+              "src/app/themes/light-pink.css",
+              "src/app/themes/light-purple.css",
+              "src/app/themes/dark-blue.css",
+              "src/app/themes/dark-green.css",
+              "src/app/themes/dark-orange.css",
+              "src/app/themes/dark-pink.css",
+              "src/app/themes/dark-purple.css"
             ],
             "scripts": [],
             "webWorkerTsConfig": "tsconfig.worker.json"

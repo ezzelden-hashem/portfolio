@@ -4,15 +4,18 @@ import { MainHeaderComponent } from "./header/main-header/main-header.component"
 import { NavMenuPageComponent } from "./header/nav-menu-page/nav-menu-page.component";
 import { FloatHeaderComponent } from "./header/float-header/float-header.component";
 import { filter } from 'rxjs';
+import { ThemeTogglerComponent } from "./utilities/theme-toggler/theme-toggler.component";
+import { ThemeStateService } from './services/state-management/theme-state.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MainHeaderComponent, NavMenuPageComponent, FloatHeaderComponent],
+  imports: [RouterOutlet, MainHeaderComponent, NavMenuPageComponent, FloatHeaderComponent, ThemeTogglerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements AfterViewInit, OnInit {
   router = inject(Router);
+  themeState = inject(ThemeStateService);
   @HostListener('window:resize', ['$event']) onResize = (event: Event) => {
     this.worker.postMessage({
       type: "resize",
@@ -38,6 +41,24 @@ export class AppComponent implements AfterViewInit, OnInit {
       }, [this.offscreen]);
     }
     else console.error('Web Workers are not supported in this environment.');
+    this.themeState.theme$.subscribe({
+      next: (theme) => {
+        document.body.classList.remove(...document.body.classList);
+        document.body.classList.add(`${theme?.type}-${theme?.color}`);
+        if (theme?.animation)
+        {
+          canvas.style.display = 'block';
+        }
+        else
+        {
+          canvas.style.display = 'none';
+        }
+        this.worker.postMessage({
+          type: 'animationColors',
+          value: theme
+        })
+      }
+    })
   }
   ngOnInit()
   {

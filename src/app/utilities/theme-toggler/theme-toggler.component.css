@@ -1,0 +1,115 @@
+:host {
+  display: block;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 100;
+}
+
+.theme-toggler-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: var(--toggler-bg, #1f2937);
+  border-radius: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  cursor: pointer;
+}
+
+.theme-toggler-container.expanded {
+  width: 220px;
+  justify-content: flex-start;
+  padding: 0 1rem;
+}
+
+.toggler-main-icon {
+  position: absolute;
+  left: 16px;
+  color: var(--toggler-icon-color, #9ca3af);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.theme-toggler-container.expanded .toggler-main-icon {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.toggler-options {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
+  pointer-events: none;
+}
+
+.theme-toggler-container.expanded .toggler-options {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: all;
+}
+
+.option-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--option-bg, #374151);
+  border: none;
+  border-radius: 50%;
+  color: var(--option-icon-color, #9ca3af);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.option-btn:hover {
+  background-color: var(--option-bg-hover, #4b5563);
+  transform: scale(1.1);
+}
+
+.accent-color-picker {
+  position: relative;
+}
+
+.accent-btn {
+  border: 2px solid white;
+}
+
+.accent-color-options {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--option-bg, #374151);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.accent-color-picker:hover .accent-color-options {
+  opacity: 1;
+  visibility: visible;
+}
+
+.color-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-swatch:hover {
+  transform: scale(1.2);
+}
