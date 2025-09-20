@@ -1,4 +1,3 @@
-import { NgStyle } from '@angular/common';
 import { Component, ElementRef, signal, ViewChild } from '@angular/core';
 
 const scrollingHeightOffset = 150;
@@ -15,7 +14,7 @@ const animationRange = {
 }
 @Component({
   selector: 'app-about-header',
-  imports: [NgStyle],
+  imports: [],
   templateUrl: './about-header.component.html',
   styleUrl: './about-header.component.css'
 })
