@@ -126,11 +126,11 @@
 
 @font-face {
     font-family: bahnschrift;
-    src: url(./assets/fonts/BAHNSCHRIFT.TTF);
+    src: url(https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/fonts/BAHNSCHRIFT.TTF);
 }
 @font-face {
     font-family: nasa;
-    src: url(./assets/fonts/NASALIZATION.OTF);
+    src: url(https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/fonts/NASALIZATION.OTF);
 }
 *
 {
