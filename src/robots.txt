@@ -1,0 +1,17 @@
+# robots.txt for ezzelden-hashem.web.app
+# Allow all search engines to crawl the entire site.
+
+User-agent: *
+Allow: /
+
+# Prevent crawling of unnecessary files
+Disallow: /assets/*.pdf$
+Disallow: /assets/*.zip$
+Disallow: /assets/*.png$
+Disallow: /assets/*.jpg$
+Disallow: /assets/*.jpeg$
+Disallow: /assets/*.gif$
+Disallow: /assets/*.svg$
+
+# Point to your sitemap to help search engines discover all routes
+Sitemap: https://ezzelden-hashem.web.app/sitemap.xml
