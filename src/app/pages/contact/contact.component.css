@@ -11,6 +11,8 @@ app-contact
   padding: 0;
   box-sizing: border-box;
   font-family: 'bahnschrift';
+  /* border: 1px solid yellow; */
+  box-sizing: border-box;
 }
 h1
 {
@@ -259,6 +261,7 @@ h1
 
 .form-input,
 .form-textarea {
+  color: var(--color-64);
   width: 100%;
   padding: 1rem 1.25rem;
   border: var(--br-style-010);
