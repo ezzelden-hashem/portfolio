@@ -22,6 +22,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/robots.txt",
+              "src/google0f7e30c4c1a0686e.html",
               "src/sitemap.xml",
               {
                 "glob": "**/*",
