@@ -12,6 +12,7 @@ export class HeroComponent {
     const link = document.createElement('a');
     link.href = 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/docs/ezzelden-hashem-cv.pdf';
     link.download = 'ezzelden-hashem-cv.pdf';
+    link.target = '_blank';
     link.click();
   }
 

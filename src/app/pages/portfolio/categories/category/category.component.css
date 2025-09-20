@@ -80,7 +80,6 @@
     justify-content: space-between;
     overflow: hidden;
     transition: height 250ms, opacity 300ms;
-    /* opacity: 0%; */
 }
 .container .category.activateSelection + .category-content-tree
 {

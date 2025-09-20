@@ -60,7 +60,6 @@ app-quick-info
 }
 .a-qinfo-data-key
 {
-    /* color: ; */
     background-color: var(--color-36);
     padding: 10px;
     border-radius: 5px;

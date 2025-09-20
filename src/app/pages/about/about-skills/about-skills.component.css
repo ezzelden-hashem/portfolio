@@ -95,9 +95,3 @@
         transform: translateX(7px);
     }
 }
-@media (max-width: 1200px) {
-    .about-skills
-    {
-        /* width: 100vw !important; */
-    }
-}

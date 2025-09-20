@@ -1,7 +1,6 @@
 .explore-card
 {
     background-color: var(--color-49);
-    /* backdrop-filter: blur(20px); */
     min-height: 370px;
     min-width: 250px;
     max-width: 400px;
@@ -22,17 +21,13 @@
 }
 .explore-card:hover
 {
-    /* min-width: 400px; */
     transform: scale(1.05) translateY(5px);
     box-shadow: 0 0 20px var(--color-47);
-    
 }
 .explore-card-active:hover
 {
-    /* min-width: 400px; */
     transform: scale(1.05) translateY(5px);
     box-shadow: 0 0 20px var(--color-47);
-    
 }
 .explore-card-icon
 {

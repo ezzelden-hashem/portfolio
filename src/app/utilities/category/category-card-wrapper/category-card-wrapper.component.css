@@ -11,10 +11,7 @@
     grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
     gap: 20px;
     padding: 30px;
-    /* align-content: start;
-    justify-content: start; */
     place-items: center;
-    /* place-content: center; */
     overflow: auto;
 }
 .category-card-wrapper-title
@@ -34,7 +31,6 @@
         flex-direction: column;
         place-items: normal;
         justify-content: start;
-        /* align-items: center; */
     }
     .category-card-wrapper-title
     {

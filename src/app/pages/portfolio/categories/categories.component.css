@@ -2,7 +2,6 @@
 {
     width: 250px;
     transition: 250ms;
-    /* display: none; */
 }
 .categories
 {
@@ -47,7 +46,6 @@
 @media (max-width: 700px) {
     :host
     {
-        /* display: none; */
         position: absolute;
         top: 57%;
         left: -250px;

@@ -15,7 +15,6 @@
 }
 .footer-content
 {
-    /* min-height: 200px; */
     display: flex;
     gap: 10px;
 }

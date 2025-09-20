@@ -29,17 +29,11 @@
     display: none;
 }
 @media (max-width: 700px) {
-    /* :host
-    {
-        overflow: auto;
-    } */
     .view-window
     {
         padding: 0px;
         border-radius: 0px;
         border: none;
-        /* height: initial; */
-        /* padding-bottom: 20px; */
     }
     .view-window .title
     {

@@ -22,7 +22,6 @@
     box-sizing: border-box;
     user-select: none;
     cursor: pointer;
-    /* transition: 150ms; */
     transition: border 0s, background-color 150ms;
 }
 .project:hover
