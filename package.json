@@ -9,7 +9,8 @@
     "test": "ng test",
     "ngtunnel": "ng serve --host 0.0.0.0 --disable-host-check",
     "cloudflaretunnel": "cloudflared tunnel --url http://localhost:4200/",
-    "tunnel": "concurrently -k -n ANGULAR,CLOUDFLARE -c yellow,cyan \"npm run ngtunnel\" \"npm run cloudflaretunnel\""
+    "tunnel": "concurrently -k -n ANGULAR,CLOUDFLARE -c yellow,cyan \"npm run ngtunnel\" \"npm run cloudflaretunnel\"",
+    "publish": "ng build --configuration production && firebase deploy --only hosting"
   },
   "private": true,
   "dependencies": {
