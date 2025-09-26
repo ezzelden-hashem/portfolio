@@ -1,7 +1,7 @@
 export class TimeLine
 {
     private static instance: TimeLine | null = null;
-    private static refreshRate: number = 100;
+    private static refreshRate: number = 30;
     private static tasksQueue: AnimationTask[] = [];
     private static timeoutId: any;
     private static maxTasksPerFrame = 100;
