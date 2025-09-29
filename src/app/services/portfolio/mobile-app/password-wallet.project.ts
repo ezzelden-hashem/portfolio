@@ -14,7 +14,8 @@ export const project_password_wallet: Project = {
             templateName: 'app-mobile-app',
             templateData: {
                 title: 'Password Wallet',
-                iconUrl: '',
+                iconUrl: 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/mobile-app/password-wallet/password-wallet-icon-512.png',
+                screenshotUrl: 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/mobile-app/password-wallet/password-wallet-screenshot.jpg',
                 keyFeatures: [
                     'Generated from private user data (name, ID, birth dates, etc.).',
                     'Regenerate passwords at any time with identical input.',

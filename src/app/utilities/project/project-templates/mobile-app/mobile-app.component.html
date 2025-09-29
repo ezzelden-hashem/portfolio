@@ -1,7 +1,9 @@
 <div class="container">
   <div class="app-showcase">
     <div class="app-header">
-      <div class="app-icon">📱</div>
+      <div class="app-icon">
+        <img [src]="templateData().iconUrl" alt="">
+      </div>
       <h1> {{ templateData().title }} </h1>
       <p class="tagline"> {{ templateData().shortDescription }} </p>
       <div class="badges">
@@ -15,8 +17,8 @@
       <div class="phone-mockup">
         <div class="phone-frame">
           <div class="phone-notch"></div>
-          <div class="phone-screen">                                  
-            <img src="https://i0.wp.com/procreator.design/blog/wp-content/uploads/2024/02/User-Interface-UI-Design.png?resize=1024%2C682&ssl=1" alt="">
+          <div class="phone-screen">
+            <img [src]="templateData().screenshotUrl" alt="">
           </div>
         </div>
       </div>

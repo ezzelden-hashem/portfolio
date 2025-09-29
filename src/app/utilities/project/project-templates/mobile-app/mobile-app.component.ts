@@ -17,4 +17,5 @@ export type MobileAppTemplateData = {
   keyFeatures: string[];
   gitHubLink: string;
   downloadLink: string;
+  screenshotUrl: string;
 }
