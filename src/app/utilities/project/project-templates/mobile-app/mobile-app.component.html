@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="app-showcase">
+    <div class="app-header">
+      <div class="app-icon">📱</div>
+      <h1> {{ templateData().title }} </h1>
+      <p class="tagline"> {{ templateData().shortDescription }} </p>
+      <div class="badges">
+        <span class="badge">iOS & Android</span>
+        <span class="badge">Free Download</span>
+        <span class="badge">4.8★ Rating</span>
+      </div>
+    </div>
+
+    <div class="app-content">
+      <div class="phone-mockup">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">                                  
+            <img src="https://i0.wp.com/procreator.design/blog/wp-content/uploads/2024/02/User-Interface-UI-Design.png?resize=1024%2C682&ssl=1" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="app-details">
+        <h2>Key Features</h2>
+        <ul class="feature-list">
+          @for (feature of templateData().keyFeatures; track $index) {
+            <li> {{ feature }} </li>
+          }
+        </ul>
+
+        <p class="description">
+          {{ templateData().longDescription }}
+        </p>
+
+        <div class="cta-buttons">
+          <a [href]="templateData().downloadLink" class="btn btn-primary" target="_blank">Download</a>
+          <a [href]="templateData().gitHubLink" class="btn btn-secondary" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

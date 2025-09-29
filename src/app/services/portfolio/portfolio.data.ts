@@ -12,6 +12,7 @@ import { project_3_glasses } from "./3d/3-glasses.project";
 import { project_room_interior } from "./3d/room-interior.project";
 import { project_cup_of_tea } from "./3d/cup-of-tea.project";
 import { project_another_3d } from "./3d/another-3d.project";
+import { project_password_wallet } from "./mobile-app/password-wallet.project";
 
 export const portfolio: Category[] = 
 [
@@ -47,6 +48,17 @@ export const portfolio: Category[] =
             project_posts,
             project_mo7a,
             project_labels,
+        ]
+    },
+    {
+        objectType: PortfolioObjectType.Category,
+        id: 'c-003',
+        name: 'mobile-apps',
+        title: 'Mobile Apps',
+        icon: 'mobile-app-i01',
+        folders: [],
+        projects: [
+            project_password_wallet
         ]
     },
 ]
