@@ -8,7 +8,7 @@ export const project_password_wallet: Project = {
     description: 'Password Wallet is a deterministic password generation app that enables users to generate, retrieve, and manage complex passwords without storing them anywhere.',
     name: 'password-wallet',
     objectType: PortfolioObjectType.Project,
-    thumbnail: '',
+    thumbnail: 'https://raw.githubusercontent.com/ezzelden-hashem/portfolio/refs/heads/main/src/assets/portfolio/mobile-app/password-wallet/password-wallet-screenshot.jpg',
     templates: [
         {
             templateName: 'app-mobile-app',

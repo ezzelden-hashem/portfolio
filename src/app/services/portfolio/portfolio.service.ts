@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { portfolio } from './portfolio.data';
 import { Category, CategoryInfo, Folder, FolderInfo, PortfolioObjectType, Project, ProjectInfo } from './portfolio.model';
+import { project_password_wallet } from './mobile-app/password-wallet.project';
 
 @Injectable({
   providedIn: 'root'
@@ -189,13 +190,14 @@ export class PortfolioService {
   }
   getRandomProjects(count: number): Project[]
   {
+    const mustContain: Project[] = [project_password_wallet];
     let projects     : Project[] = [];
-    let randProjects : Project[] = [];
+    let randProjects : Project[] = [...mustContain];
     let randIndices  : number [] = [];
     this.portfolioObject.flatMap(c => c.folders).map(f => projects.push(...f.projects));
     this.portfolioObject.flatMap(c => c.projects).map(p => projects.push(p));
     let pending = (count <= projects.length) ? count : projects.length;
-    while (pending > 0)
+    while ((pending - mustContain.length) > 0)
     {
       const randIdx: number = Math.floor(Math.random() * projects.length);
       if (!randIndices.includes(randIdx))
@@ -204,7 +206,7 @@ export class PortfolioService {
         --pending;
       }
     }
-    randIndices.map(i => randProjects.push(projects[i]));
+    randIndices.map(i => randProjects.push(projects.filter(p => !mustContain.includes(p))[i]));
     return randProjects;
   }
   getProjectPath(projectId: string): string[] | null
